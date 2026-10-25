@@ -1,29 +1,233 @@
 @import "tailwindcss";
 
+@theme {
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
 @layer base {
-  body {
-    background-color: #000000;
+  html {
+    background-color: #050811;
     color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #050811;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, .font-syne {
+    font-family: 'Syne', sans-serif;
   }
 }
 
-.font-signature {
-  font-family: 'Alex Brush', cursive;
+.font-display {
+  font-family: 'Syne', sans-serif;
 }
 
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rich Dark Blue Ambient Background */
 .ambient-glow {
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.16) 0%, transparent 55%),
+    radial-gradient(circle at 85% 25%, rgba(30, 64, 175, 0.14) 0%, transparent 50%),
+    radial-gradient(circle at 15% 65%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    #050811;
 }
 
+/* Noticeable Sapphire Glow */
 .glow {
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.03);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.8), 0 0 40px rgba(29, 78, 216, 0.25);
+}
+
+.glow-blue-intense {
+  box-shadow: 0 20px 50px -10px rgba(29, 78, 216, 0.5), 0 0 35px rgba(37, 99, 235, 0.35);
 }
 
 .glass {
-  background: rgba(13, 13, 13, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(8, 15, 34, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Curved 3D Interactive Card */
+.bako-curved-card {
+  background: linear-gradient(165deg, rgba(13, 25, 56, 0.85) 0%, rgba(8, 13, 28, 0.95) 55%, rgba(5, 8, 17, 0.98) 100%);
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  border-radius: 1.5rem;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bako-curved-card:hover {
+  transform: translateY(-10px) scale(1.015);
+  border-color: rgba(59, 130, 246, 0.75);
+  box-shadow:
+    0 28px 60px -12px rgba(0, 0, 0, 0.9),
+    0 0 40px rgba(29, 78, 216, 0.45),
+    inset 0 1px 0 rgba(96, 165, 250, 0.3);
+}
+
+.obsidian-card {
+  background: linear-gradient(165deg, #0b1530 0%, #070c1c 100%);
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  border-radius: 1.5rem;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.obsidian-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: rgba(59, 130, 246, 0.7);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.85), 0 0 35px rgba(29, 78, 216, 0.4);
+}
+
+/* Signature Dark Royal Blue Button with Animated Light Sweep */
+.btn-dark-blue {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #172554 0%, #1e40af 45%, #1d4ed8 80%, #2563eb 100%);
+  color: #ffffff;
+  border: 1px solid rgba(96, 165, 250, 0.4);
+  box-shadow: 0 10px 30px -5px rgba(29, 78, 216, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s ease,
+    filter 0.35s ease;
+}
+
+.btn-dark-blue::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 45%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.28),
+    transparent
+  );
+  transform: rotate(25deg);
+  animation: shimmer-sweep 3.5s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.btn-dark-blue:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: rgba(147, 197, 253, 0.85);
+  box-shadow: 0 16px 40px -4px rgba(37, 99, 235, 0.8), 0 0 25px rgba(59, 130, 246, 0.5);
+  filter: brightness(1.12);
+}
+
+.btn-dark-blue:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Liquid Button Hover Effect */
+.btn-liquid-white {
+  position: relative;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  color: #050811;
+  transition: color 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-liquid-white::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 0;
+}
+
+.btn-liquid-white:hover {
+  color: #FFFFFF;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 35px rgba(29, 78, 216, 0.55);
+}
+
+.btn-liquid-white:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-liquid-white > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Heavy Noticeable Keyframe Animations */
+@keyframes shimmer-sweep {
+  0% {
+    left: -60%;
+  }
+  45%, 100% {
+    left: 130%;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.03);
+  }
+}
+
+@keyframes pulse-blue-ring {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(29, 78, 216, 0.35), 0 0 30px rgba(30, 64, 175, 0.2);
+    border-color: rgba(37, 99, 235, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.7), 0 0 60px rgba(29, 78, 216, 0.4);
+    border-color: rgba(96, 165, 250, 0.8);
+  }
+}
+
+@keyframes gradient-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.animate-pulse-blue {
+  animation: pulse-blue-ring 3s ease-in-out infinite;
+}
+
+.animate-gradient-pan {
+  background-size: 200% 200%;
+  animation: gradient-pan 4s ease infinite;
 }
 
 @keyframes bako-shimmer {
@@ -36,7 +240,26 @@
 }
 
 .bako-skeleton {
-  background: linear-gradient(90deg, #18181b 25%, #27272a 50%, #18181b 75%);
+  background: linear-gradient(90deg, #080f24 25%, #172554 50%, #080f24 75%);
   background-size: 200% 100%;
   animation: bako-shimmer 1.6s infinite linear;
+}
+
+@keyframes soundwave {
+  0%, 100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-soundwave-1 {
+  animation: soundwave 0.65s ease-in-out infinite;
+}
+.animate-soundwave-2 {
+  animation: soundwave 0.5s ease-in-out infinite 0.15s;
+}
+.animate-soundwave-3 {
+  animation: soundwave 0.75s ease-in-out infinite 0.3s;
 }

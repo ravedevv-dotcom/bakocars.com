@@ -1,65 +1,88 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { motion } from 'motion/react';
 import { ShieldCheck, Award, FileCheck, Truck, Headphones, Lock } from 'lucide-react';
 
 export default function TrustSection() {
   const trustPillars = [
     {
       icon: ShieldCheck,
-      title: '150-Point Inspection',
-      description: 'Every vehicle undergoes rigorous mechanical, electronic, and structural verification by certified luxury automotive specialists.'
+      title: '01. 150-Point Technical Audit',
+      description:
+        'Every vehicle undergoes rigorous mechanical, electronic, and structural verification by certified luxury automotive specialists.',
     },
     {
       icon: FileCheck,
-      title: 'Authenticated Service History',
-      description: 'Transparent history reports, mileage verification, and original title documentation provided with every single acquisition.'
+      title: '02. Full Customs Duty Paid',
+      description:
+        'Authenticated Nigeria Customs duty certificates, mileage verification, and original title documentation provided with every acquisition.',
     },
     {
       icon: Award,
-      title: 'Bako Luxury Warranty',
-      description: 'Comprehensive powertrain protection and complimentary 1-year roadside concierge service included on all qualifying vehicles.'
+      title: '03. 40% Off Direct Import Promo',
+      description:
+        'Source bespoke specs directly from global auctions in the USA, Europe, Canada, and Dubai with 40% off procurement & handling.',
     },
     {
       icon: Truck,
-      title: 'Nationwide Express Delivery',
-      description: 'White-glove, enclosed transport directly to your doorstep or private estate anywhere across the country.'
+      title: '04. Nationwide Enclosed Delivery',
+      description:
+        'White-glove flatbed transport directly from our Abuja showroom behind Tsukunda House to any state in Nigeria.',
     },
     {
       icon: Headphones,
-      title: 'Dedicated Concierge',
-      description: 'Personalized 24/7 advisor support for trade-ins, custom spec orders, registration, and ongoing vehicle maintenance.'
+      title: '05. Precision Auto Spa Stand',
+      description:
+        'On-site executive car wash, ceramic protection, and interior leather restoration located right at our Abuja showroom.',
     },
     {
       icon: Lock,
-      title: 'Secure Settlement',
-      description: 'Flexible payment structures, instant bank wire verification, and tailored high-net-worth financing arrangements.'
-    }
+      title: '06. Same-Day Trade-In Equity',
+      description:
+        'Transparent market appraisals allowing you to roll your current vehicle equity seamlessly into your next luxury machine.',
+    },
   ];
 
   return (
-    <div className="py-12 bg-black border border-white/10 p-6 sm:p-10">
-      <div className="text-center max-w-2xl mx-auto mb-12">
-        <h3 className="font-sans text-xl sm:text-2xl font-bold tracking-[0.2em] text-white uppercase">
+    <div className="py-12 bg-gradient-to-b from-[#08132e] via-[#060c1f] to-[#050811] border border-blue-500/25 rounded-3xl p-6 sm:p-10 shadow-2xl">
+      <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span className="font-mono text-[10px] text-blue-400 uppercase tracking-[0.28em] font-bold block">
+          UNCOMPROMISED PEDIGREE
+        </span>
+        <h3 className="font-display text-2xl sm:text-3xl font-extrabold tracking-[0.06em] text-white uppercase">
           THE BAKO INTEGRITY GUARANTEE
         </h3>
-        <p className="text-white/50 text-xs font-mono uppercase tracking-widest mt-2">
-          UNCOMPROMISED ACCURACY & PEACE OF MIND WITH EVERY KEY HANDOVER
+        <p className="text-blue-200/60 text-xs sm:text-sm font-sans">
+          Every key handover at our Abuja showroom is backed by verified documentation and mechanical excellence.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {trustPillars.map((pillar, idx) => {
           const Icon = pillar.icon;
           return (
-            <div key={idx} className="border border-white/10 p-6 bg-zinc-950/50 hover:border-white/30 transition-colors">
-              <div className="w-10 h-10 border border-white/20 flex items-center justify-center mb-4 bg-white/5 text-white">
-                <Icon className="w-5 h-5 text-white" />
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20, scale: 0.96 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: idx * 0.08 }}
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="bako-curved-card rounded-2xl p-6 space-y-3.5 group"
+            >
+              <div className="w-11 h-11 rounded-2xl border border-blue-500/40 flex items-center justify-center bg-blue-950/60 text-blue-400 shadow-[0_0_20px_rgba(29,78,216,0.35)] group-hover:bg-blue-700 group-hover:text-white transition-all">
+                <Icon className="w-5 h-5" />
               </div>
-              <h4 className="font-sans text-sm font-bold tracking-wider text-white uppercase mb-2">
+              <h4 className="font-display text-sm font-bold tracking-wide text-white uppercase group-hover:text-blue-200 transition-colors">
                 {pillar.title}
               </h4>
-              <p className="text-xs text-white/60 font-mono leading-relaxed uppercase tracking-wider">
+              <p className="text-xs text-blue-100/65 font-sans leading-relaxed">
                 {pillar.description}
               </p>
-            </div>
+            </motion.div>
           );
         })}
       </div>

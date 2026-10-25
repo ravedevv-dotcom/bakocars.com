@@ -4,7 +4,8 @@
  */
 
 import React, { useState } from 'react';
-import { Search, RotateCcw, Clock, ArrowRight } from 'lucide-react';
+import { motion } from 'motion/react';
+import { Search, RotateCcw, ArrowRight } from 'lucide-react';
 import { FilterState } from './types';
 
 interface InventoryFiltersProps {
@@ -15,9 +16,21 @@ interface InventoryFiltersProps {
   resultsCount: number;
 }
 
-const MAX_BUDGET_CEILING = 500000000; // 500 Million Naira
+const MAX_BUDGET_CEILING = 500000000;
 
-const QUICK_TAGS = ['Mercedes', 'Lexus', 'Toyota', 'CLS 550', 'RX 350', 'V8', 'AMG', 'Sedan', 'SUV', 'Coupe'];
+const QUICK_TAGS = [
+  'All',
+  'Mercedes',
+  'Range Rover',
+  'Lexus',
+  'Toyota',
+  'AMG',
+  'G63',
+  'GLE',
+  'C300',
+  'ML350',
+  'Corolla',
+];
 
 export default function InventoryFilters({
   filters,
@@ -25,7 +38,7 @@ export default function InventoryFilters({
   minInventoryPrice,
   resultsCount,
 }: InventoryFiltersProps) {
-  const [recentSearches, setRecentSearches] = useState<string[]>(() => {
+  const [, setRecentSearches] = useState<string[]>(() => {
     try {
       const saved = localStorage.getItem('bako_recent_searches');
       return saved ? JSON.parse(saved) : ['Mercedes', 'GLE 450', 'AMG'];
@@ -36,7 +49,9 @@ export default function InventoryFilters({
 
   const scrollToResults = () => {
     setTimeout(() => {
-      const target = document.getElementById('inventory-grid') || document.getElementById('inventory-filters-container');
+      const target =
+        document.getElementById('inventory-grid') ||
+        document.getElementById('inventory-filters-container');
       if (target) {
         const yOffset = -100;
         const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -81,20 +96,27 @@ export default function InventoryFilters({
   };
 
   return (
-    <div className="glass shadow-2xl rounded-none p-5 sm:p-6 mb-10 glow border border-white/10" id="inventory-filters-container">
-      {/* Universal Search Form - Sticky when scrolling down */}
-      <form onSubmit={handleSearchSubmit} className="sticky top-20 z-30 bg-black/95 backdrop-blur-md py-4 px-3 -mx-3 sm:-mx-6 sm:px-6 border-b border-white/10 shadow-2xl space-y-4 transition-all">
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="bako-curved-card rounded-3xl p-6 sm:p-8 mb-10 shadow-2xl"
+      id="inventory-filters-container"
+    >
+      <form onSubmit={handleSearchSubmit} className="space-y-5">
         <div className="flex flex-col sm:flex-row items-stretch gap-3">
           <div className="relative flex-1">
-            <label htmlFor="inventory-search-input" className="sr-only">Search Showroom Fleet</label>
+            <label htmlFor="inventory-search-input" className="sr-only">
+              Search Showroom Fleet
+            </label>
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <Search className="h-5 w-5 text-white/40" />
+              <Search className="h-5 w-5 text-blue-400" />
             </div>
             <input
               id="inventory-search-input"
               type="text"
-              className="block w-full pl-12 pr-4 py-3.5 bg-black border border-white/15 rounded-none text-base text-white placeholder-white/40 transition-colors focus:border-white focus:ring-1 focus:ring-white/20 font-sans tracking-wide"
-              placeholder="Type model, make, trim or spec (e.g., GLE, Mercedes, V8, Coupe, Camry)..."
+              className="block w-full pl-12 pr-4 py-4 bg-[#050a18] border border-blue-500/30 rounded-2xl text-sm sm:text-base text-white placeholder-blue-200/40 transition-all focus:border-blue-400 focus:shadow-[0_0_20px_rgba(37,99,235,0.3)] focus:outline-none font-sans"
+              placeholder="Search model, make, trim or spec (e.g., G63, Range Rover, ML350, C300, Corolla)..."
               value={filters.search}
               onChange={(e) => setFilters({ ...filters, search: e.target.value })}
               onKeyDown={(e) => {
@@ -108,7 +130,7 @@ export default function InventoryFilters({
 
           <button
             type="submit"
-            className="px-8 py-3.5 bg-white hover:bg-neutral-200 text-black font-sans text-xs font-black tracking-[0.2em] uppercase rounded-none transition-all cursor-pointer flex items-center justify-center space-x-2 shrink-0 shadow-lg"
+            className="btn-dark-blue px-8 py-4 font-display text-xs font-extrabold tracking-[0.2em] uppercase rounded-2xl cursor-pointer flex items-center justify-center space-x-2 shrink-0"
             id="search-action-btn"
           >
             <span>SEARCH FLEET</span>
@@ -116,40 +138,44 @@ export default function InventoryFilters({
           </button>
         </div>
 
-        {/* Quick Suggestion Tags & Recent Searches */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
+        {/* Interactive Curved Pill Filter Controls */}
+        <div className="flex flex-wrap items-center justify-between gap-4 pt-1">
           <div className="flex flex-wrap items-center gap-2" id="quick-search-tags">
-            <span className="text-[9px] font-mono uppercase text-white/40 tracking-wider flex items-center space-x-1 mr-1">
-              <Clock className="w-3 h-3 text-white/40" />
-              <span>POPULAR SEARCHES:</span>
-            </span>
-
-            {QUICK_TAGS.map((tag) => (
-              <button
-                key={tag}
-                type="button"
-                onClick={() => {
-                  setFilters({ ...filters, search: tag });
-                  addRecentSearchAndTrigger(tag);
-                }}
-                className={`px-2.5 py-1 text-[10px] font-mono font-semibold transition-all cursor-pointer rounded-none uppercase tracking-wider border ${
-                  filters.search.toLowerCase() === tag.toLowerCase()
-                    ? 'bg-white text-black border-white'
-                    : 'bg-white/5 hover:bg-white/15 border-white/15 text-white/80 hover:text-white'
-                }`}
-                id={`quick-tag-${tag}`}
-              >
-                {tag}
-              </button>
-            ))}
+            {QUICK_TAGS.map((tag) => {
+              const isAll = tag === 'All';
+              const isSelected = isAll
+                ? filters.search === ''
+                : filters.search.toLowerCase() === tag.toLowerCase();
+              return (
+                <button
+                  key={tag}
+                  type="button"
+                  onClick={() => {
+                    const nextQuery = isAll ? '' : tag;
+                    setFilters({ ...filters, search: nextQuery });
+                    if (nextQuery) addRecentSearchAndTrigger(nextQuery);
+                  }}
+                  className={`px-4 py-1.5 text-[10px] font-mono font-bold transition-all cursor-pointer rounded-full uppercase tracking-wider border whitespace-nowrap shrink-0 ${
+                    isSelected
+                      ? 'bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 text-white border-blue-400 shadow-[0_0_15px_rgba(37,99,235,0.6)] scale-105'
+                      : 'bg-[#050a18] hover:border-blue-400/60 border-blue-500/25 text-blue-200/70 hover:text-white'
+                  }`}
+                  id={`quick-tag-${tag}`}
+                >
+                  {tag}
+                </button>
+              );
+            })}
           </div>
 
           {/* Sort Selector */}
           <div className="flex items-center space-x-2 shrink-0">
-            <span className="text-[9px] font-mono uppercase text-white/40 tracking-wider">SORT:</span>
+            <span className="text-[10px] font-mono uppercase text-blue-300/60 tracking-wider">
+              SORT:
+            </span>
             <select
               id="inventory-sort-select"
-              className="appearance-none bg-black border border-white/15 px-3 py-1 text-[10px] font-mono text-white/80 uppercase tracking-wider cursor-pointer focus:border-white/40"
+              className="bg-[#050a18] border border-blue-500/30 rounded-xl px-3.5 py-2 text-[10px] font-mono text-white uppercase tracking-wider cursor-pointer focus:border-blue-400 focus:outline-none"
               value={filters.sortBy}
               onChange={(e) => {
                 setFilters({ ...filters, sortBy: e.target.value as FilterState['sortBy'] });
@@ -164,26 +190,23 @@ export default function InventoryFilters({
       </form>
 
       {/* Results Bar & Clear Control */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-4 mt-4 border-t border-white/10 gap-3">
-        <div className="flex items-center space-x-2">
-          <div className="h-2 w-2 bg-green-400 rounded-full animate-ping" />
-          <span className="text-xs font-mono text-white/60 tracking-wider uppercase">
-            MATCHING <span className="text-white font-bold">{resultsCount}</span> VEHICLES FOUND
-          </span>
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-4 mt-4 border-t border-blue-500/20 gap-3">
+        <div className="font-mono text-xs text-blue-200/70 tracking-wider uppercase">
+          SHOWING <span className="text-blue-400 font-bold tabular-nums">{resultsCount}</span> DUTY-PAID VEHICLES IN ABUJA SHOWROOM
         </div>
 
         {filters.search && (
           <button
             type="button"
             onClick={handleReset}
-            className="flex items-center space-x-1.5 text-xs font-mono text-white/50 hover:text-white transition-colors cursor-pointer tracking-wider uppercase"
+            className="flex items-center space-x-1.5 text-xs font-mono text-blue-400 hover:text-white transition-colors cursor-pointer tracking-wider uppercase"
             id="filters-reset-btn"
           >
             <RotateCcw className="w-3.5 h-3.5" />
-            <span>CLEAR SEARCH ({filters.search})</span>
+            <span>CLEAR FILTER ({filters.search})</span>
           </button>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }

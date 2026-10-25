@@ -5,7 +5,7 @@
 
 import React, { useRef, useState } from 'react';
 import { motion } from 'motion/react';
-import { Share2, ChevronLeft, ChevronRight, Check, Bell, MessageCircle } from 'lucide-react';
+import { Share2, ChevronLeft, ChevronRight, Check, MessageCircle } from 'lucide-react';
 import { Car, getImageUrl, handleImageFallback } from './types';
 import { SHOWROOM_VEHICLES } from './data';
 
@@ -16,7 +16,7 @@ interface NewInventoryProps {
   vehicles?: Car[];
 }
 
-export default function NewInventory({ onViewDetails, onGetApproved, onOpenPriceAlert, vehicles = SHOWROOM_VEHICLES }: NewInventoryProps) {
+export default function NewInventory({ onViewDetails, vehicles = SHOWROOM_VEHICLES }: NewInventoryProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
@@ -49,7 +49,6 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
 
   const shareCar = (car: Car, e: React.MouseEvent) => {
     e.stopPropagation();
-    const shareText = `Check out this pristine ${car.year} ${car.make} ${car.model} at Bako Cars!`;
     navigator.clipboard.writeText(`${window.location.origin}/?car=${car.id}`);
     setCopiedId(car.id);
     setTimeout(() => setCopiedId(null), 2000);
@@ -62,59 +61,79 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
   };
 
   return (
-    <section className="w-full bg-black py-12" id="new-inventory-section">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[#050811] py-16 relative overflow-hidden" id="new-inventory-section">
+      {/* Subtle dark blue ambient glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[280px] bg-blue-700/10 blur-[130px] rounded-full pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Header Title with correct Bottom light blue accent line */}
-        <div className="flex justify-between items-end mb-8 border-b border-white/5 pb-4">
+        {/* Header Title with Glowing Dark Blue Accent Line */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-between items-end mb-10 border-b border-blue-500/20 pb-5"
+        >
           <div className="space-y-2">
-            <h2 className="font-sans font-black tracking-widest text-xl sm:text-2xl text-white uppercase relative inline-block">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400 font-bold block">
+              HANDPICKED ABUJA FLEET
+            </span>
+            <h2 className="font-sans font-black tracking-widest text-xl sm:text-3xl text-white uppercase relative inline-block">
               POPULAR LISTINGS
-              {/* Thin purple underline bar spanning exactly under the heading */}
-              <span className="absolute -bottom-4 left-0 h-[3px] bg-purple-400 w-24 block" />
+              <span className="absolute -bottom-5 left-0 h-1 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 w-28 block rounded-full shadow-[0_0_15px_rgba(37,99,235,0.85)]" />
             </h2>
           </div>
 
-          {/* Navigation buttons */}
-          <div className="flex space-x-2">
-            <button
+          {/* Curved Navigation buttons */}
+          <div className="flex space-x-3">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.92 }}
               onClick={() => handleScroll('left')}
-              className="p-2 border border-white/10 hover:border-white/40 text-white/60 hover:text-white bg-neutral-900 transition-all rounded-none cursor-pointer"
+              className="p-3 border border-blue-500/35 hover:border-blue-400 text-white/80 hover:text-white bg-[#08122b] hover:bg-blue-700 transition-all rounded-full cursor-pointer shadow-[0_0_20px_rgba(29,78,216,0.3)]"
               aria-label="Scroll left"
             >
               <ChevronLeft className="w-4 h-4" />
-            </button>
-            <button
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.92 }}
               onClick={() => handleScroll('right')}
-              className="p-2 border border-white/10 hover:border-white/40 text-white/60 hover:text-white bg-neutral-900 transition-all rounded-none cursor-pointer"
+              className="p-3 border border-blue-500/35 hover:border-blue-400 text-white/80 hover:text-white bg-[#08122b] hover:bg-blue-700 transition-all rounded-full cursor-pointer shadow-[0_0_20px_rgba(29,78,216,0.3)]"
               aria-label="Scroll right"
             >
               <ChevronRight className="w-4 h-4" />
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Carousel container with beautiful horizontal scrollbar */}
+        {/* Carousel container */}
         <div
           ref={scrollRef}
-          className="flex space-x-6 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent snap-x snap-mandatory"
-          style={{ scrollbarWidth: 'thin', scrollbarColor: 'rgba(255,255,255,0.1) transparent' }}
+          className="flex space-x-6 overflow-x-auto pb-6 pt-2 scrollbar-thin scrollbar-thumb-blue-600/30 scrollbar-track-transparent snap-x snap-mandatory"
+          style={{ scrollbarWidth: 'thin', scrollbarColor: 'rgba(37,99,235,0.35) transparent' }}
         >
-          {NEW_ARRIVALS.map((car) => (
-            <div
+          {NEW_ARRIVALS.map((car, idx) => (
+            <motion.div
               key={car.id}
-              className="shrink-0 w-[290px] sm:w-[325px] snap-start bg-[#090909] border border-white/10 hover:border-white/30 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/10"
+              initial={{ opacity: 0, y: 30, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.55, delay: idx * 0.08 }}
+              whileHover={{ y: -10, scale: 1.015 }}
+              className="shrink-0 w-[300px] sm:w-[335px] snap-start bako-curved-card rounded-3xl overflow-hidden flex flex-col justify-between group"
             >
               {/* 1. Image block with Watermark */}
               <div 
                 onClick={() => onViewDetails(car)}
-                className="relative aspect-[4/3] w-full overflow-hidden bg-black border-b border-white/10 cursor-pointer"
+                className="relative aspect-[4/3] w-full overflow-hidden bg-[#060b19] border-b border-blue-500/20 cursor-pointer"
               >
                 <img
                   src={getImageUrl(car.images[0], 540)}
                   alt={`${car.make} ${car.model}`}
                   decoding="async"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     handleImageFallback(e, car.images[0]);
@@ -131,9 +150,9 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
                   </span>
                 </div>
 
-                {/* 12-Photo Slot Badge */}
+                {/* Curved Photo Slot Pill */}
                 <div className="absolute top-3 left-3 select-none pointer-events-none">
-                  <span className="px-2 py-0.5 bg-black/80 backdrop-blur-sm text-white font-mono text-[8.5px] font-bold uppercase rounded border border-white/10">
+                  <span className="px-3 py-1 bg-[#060d24]/85 backdrop-blur-md text-blue-200 font-mono text-[8.5px] font-bold uppercase rounded-full border border-blue-400/30 shadow-md">
                     {car.images.length > 0 ? `${car.images.length}/12 PHOTOS` : '12 SLOTS READY'}
                   </span>
                 </div>
@@ -142,36 +161,34 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
               {/* 2. Specs detail presentation area */}
               <div 
                 onClick={() => onViewDetails(car)}
-                className="p-5 flex-grow cursor-pointer"
+                className="p-5 sm:p-6 flex-grow cursor-pointer"
               >
-                {/* Year Model Make heading */}
-                <h3 className="font-mono text-[10px] tracking-widest text-white/45 uppercase leading-tight font-semibold">
+                <h3 className="font-mono text-[10px] tracking-widest text-blue-400 uppercase leading-tight font-bold">
                   {car.year} {car.make}
                 </h3>
-                {/* Highlight text title */}
-                <h4 className="font-sans text-[12px] sm:text-[13px] font-black text-white hover:text-purple-400 transition-colors uppercase tracking-wider mt-1.5 line-clamp-1">
+                <h4 className="font-sans text-[13px] sm:text-[14px] font-black text-white group-hover:text-blue-300 transition-colors uppercase tracking-wider mt-1.5 line-clamp-1">
                   {car.model}
                 </h4>
 
-                {/* Monospaced tabular specifications rows */}
-                <div className="mt-5 space-y-1.5 text-[10px] font-mono tracking-widest text-white/40 uppercase">
-                  <div className="flex justify-between border-b border-white/[0.03] pb-1">
+                {/* Monospaced tabular specifications rows in curved pod */}
+                <div className="mt-4 p-3.5 rounded-2xl bg-[#050a18]/90 border border-blue-500/20 space-y-1.5 text-[10px] font-mono tracking-widest text-white/45 uppercase">
+                  <div className="flex justify-between border-b border-blue-500/10 pb-1">
                     <span>DUTY</span>
-                    <span className="text-emerald-400 font-medium">PAID & CLEARED</span>
+                    <span className="text-emerald-400 font-bold">PAID & CLEARED</span>
                   </div>
-                  <div className="flex justify-between border-b border-white/[0.03] pb-1">
+                  <div className="flex justify-between border-b border-blue-500/10 pb-1">
                     <span>STOCK #</span>
                     <span className="text-white font-medium">{car.stockNumber}</span>
                   </div>
-                  <div className="flex justify-between border-b border-white/[0.03] pb-1">
+                  <div className="flex justify-between border-b border-blue-500/10 pb-1">
                     <span>TRANSMISSION</span>
-                    <span className="text-white font-medium truncate max-w-[160px]">{getCustomTransmissionDisplay(car)}</span>
+                    <span className="text-white font-medium truncate max-w-[150px]">{getCustomTransmissionDisplay(car)}</span>
                   </div>
-                  <div className="flex justify-between border-b border-white/[0.03] pb-1">
+                  <div className="flex justify-between border-b border-blue-500/10 pb-1">
                     <span>DRIVETRAIN</span>
                     <span className="text-white font-medium">{car.drivetrain?.toUpperCase() || 'AWD'}</span>
                   </div>
-                  <div className="flex justify-between pb-1">
+                  <div className="flex justify-between">
                     <span>FUEL TYPE</span>
                     <span className="text-white font-medium">{car.fuelType.toUpperCase()}</span>
                   </div>
@@ -183,21 +200,23 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
                     {car.price && car.price > 0 ? (
                       formatCurrency(car.price)
                     ) : (
-                      <span className="text-xs font-mono text-purple-400">INQUIRE FOR PRICE</span>
+                      <span className="text-xs font-mono text-blue-400 drop-shadow-[0_0_10px_rgba(37,99,235,0.6)]">
+                        INQUIRE FOR PRICE
+                      </span>
                     )}
                   </div>
                   <button
                     onClick={(e) => shareCar(car, e)}
-                    className="p-1.5 border border-white/10 hover:border-white text-white/60 hover:text-white transition-colors"
+                    className="p-2 rounded-xl border border-blue-500/30 bg-[#070f24] hover:border-blue-400 text-white/70 hover:text-white transition-all cursor-pointer"
                     title="Share link"
                   >
-                    {copiedId === car.id ? <Check className="w-3.5 h-3.5 text-purple-400" /> : <Share2 className="w-3.5 h-3.5" />}
+                    {copiedId === car.id ? <Check className="w-3.5 h-3.5 text-blue-400" /> : <Share2 className="w-3.5 h-3.5" />}
                   </button>
                 </div>
               </div>
 
               {/* 3. Action Button - INQUIRE ON WHATSAPP */}
-              <div className="p-5 pt-0">
+              <div className="p-5 sm:p-6 pt-0">
                 <a
                   href={`https://wa.me/message/JCOUM7I4Z2XVB1?text=${encodeURIComponent(
                     `Hello Bako Cars, I am interested in the ${car.year} ${car.make} ${car.model} (Stock #: ${car.stockNumber}). Please send details.`
@@ -205,14 +224,14 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="w-full bg-purple-600 hover:bg-purple-500 text-white font-sans font-black text-[10px] uppercase tracking-[0.15em] py-2.5 transition-colors duration-300 flex items-center justify-center space-x-1.5 cursor-pointer block text-center shadow-md shadow-purple-500/20"
+                  className="w-full btn-dark-blue rounded-2xl text-white font-sans font-black text-[10px] uppercase tracking-[0.18em] py-3.5 flex items-center justify-center space-x-2 cursor-pointer text-center"
                 >
-                  <MessageCircle className="w-3.5 h-3.5 text-white" />
+                  <MessageCircle className="w-4 h-4 text-blue-200" />
                   <span>INQUIRE ON WHATSAPP</span>
                 </a>
               </div>
 
-            </div>
+            </motion.div>
           ))}
         </div>
 

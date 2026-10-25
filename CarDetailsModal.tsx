@@ -53,7 +53,7 @@ export default function CarDetailsModal({
   const [activeImageIdx, setActiveImageIdx] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [isVideoMode, setIsVideoMode] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsMobile] = useState(false);
   const [copied, setCopied] = useState(false);
   const [isDownloadingSingle, setIsDownloadingSingle] = useState(false);
   const [isDownloadingAll, setIsDownloadingAll] = useState(false);
@@ -240,27 +240,31 @@ export default function CarDetailsModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 select-none animate-fade-in"
+      className="fixed inset-0 z-50 bg-black/90 backdrop-blur-lg flex items-center justify-center p-2 sm:p-4 select-none animate-fade-in"
       onClick={onClose}
     >
-      <div
-        className="bg-[#0A0A0A] border border-neutral-800 rounded-xl w-full max-w-6xl max-h-[96vh] flex flex-col overflow-hidden shadow-2xl relative text-white"
+      <motion.div
+        initial={{ opacity: 0, scale: 0.94, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.94, y: 20 }}
+        transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+        className="bg-gradient-to-b from-[#08122c] via-[#060c1d] to-[#040711] border border-blue-500/35 rounded-3xl w-full max-w-6xl max-h-[95vh] flex flex-col overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.9),0_0_45px_rgba(29,78,216,0.35)] relative text-white"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Sticky Top Header */}
-        <div className="flex justify-between items-center px-4 sm:px-6 py-3 border-b border-neutral-800/80 bg-neutral-900/80 z-20">
+        <div className="flex justify-between items-center px-5 sm:px-7 py-4 border-b border-blue-500/20 bg-[#050a18]/90 z-20">
           <div className="flex items-center space-x-2">
             <span className="font-serif italic font-extrabold text-sm text-white tracking-wider">BAKO CARS</span>
-            <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">&bull; ABUJA SHOWROOM</span>
+            <span className="font-mono text-[9px] text-blue-400 uppercase tracking-widest">&bull; ABUJA SHOWROOM</span>
           </div>
 
-          {/* Quick Action Buttons */}
+          {/* Quick Curved Action Buttons */}
           <div className="flex items-center space-x-2 shrink-0">
             <a
               href={waInquiryUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 border border-neutral-700 hover:border-purple-500 bg-neutral-900 text-purple-400 rounded transition-colors"
+              className="p-2.5 border border-blue-500/35 hover:border-blue-400 bg-blue-950/60 hover:bg-blue-700 text-blue-300 hover:text-white rounded-xl transition-all"
               title="Chat on WhatsApp"
             >
               <MessageCircle className="w-4 h-4" />
@@ -268,10 +272,10 @@ export default function CarDetailsModal({
 
             <button
               onClick={handleShare}
-              className={`p-2 border rounded transition-colors space-x-1 flex items-center font-mono text-[10px] font-bold ${
+              className={`p-2.5 border rounded-xl transition-all space-x-1 flex items-center font-mono text-[10px] font-bold cursor-pointer ${
                 copied
                   ? 'bg-emerald-500 border-emerald-500 text-black'
-                  : 'border-neutral-700 hover:border-white bg-neutral-900 text-white'
+                  : 'border-blue-500/35 hover:border-blue-400 bg-blue-950/60 text-white'
               }`}
               title="Share Vehicle"
             >
@@ -280,7 +284,7 @@ export default function CarDetailsModal({
 
             <button
               onClick={onClose}
-              className="p-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded transition-colors cursor-pointer"
+              className="p-2.5 bg-blue-950/60 hover:bg-blue-800 border border-blue-500/30 text-white rounded-xl transition-colors cursor-pointer"
               aria-label="Close details"
             >
               <X className="w-4 h-4" />
@@ -292,7 +296,7 @@ export default function CarDetailsModal({
         <div className="overflow-y-auto p-4 sm:p-6 md:p-8 flex-grow space-y-6">
           {/* Header Title Bar */}
           <div>
-            <div className="font-mono text-[11px] font-bold uppercase text-neutral-400 tracking-[0.2em] mb-1">
+            <div className="font-mono text-[11px] font-bold uppercase text-blue-400 tracking-[0.2em] mb-1">
               {car.year ? `${car.year} ` : ''}{car.make}
             </div>
             <h1 className="font-sans text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
@@ -307,13 +311,13 @@ export default function CarDetailsModal({
               
               {/* Media Mode Switcher (if video exists) */}
               {car.videoUrl && (
-                <div className="flex items-center space-x-2 pb-1 border-b border-white/10">
+                <div className="flex items-center space-x-2 pb-2 border-b border-blue-500/20">
                   <button
                     onClick={() => setIsVideoMode(false)}
-                    className={`px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider flex items-center space-x-1.5 transition-all cursor-pointer ${
+                    className={`px-4 py-2 rounded-full font-mono text-[10px] font-bold uppercase tracking-wider flex items-center space-x-1.5 transition-all cursor-pointer ${
                       !isVideoMode
-                        ? 'bg-white text-black font-extrabold'
-                        : 'bg-neutral-900 text-neutral-400 hover:text-white border border-neutral-800'
+                        ? 'btn-dark-blue text-white font-extrabold'
+                        : 'bg-[#070f24] text-neutral-400 hover:text-white border border-blue-500/25'
                     }`}
                   >
                     <Camera className="w-3.5 h-3.5" />
@@ -321,10 +325,10 @@ export default function CarDetailsModal({
                   </button>
                   <button
                     onClick={() => setIsVideoMode(true)}
-                    className={`px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider flex items-center space-x-1.5 transition-all cursor-pointer ${
+                    className={`px-4 py-2 rounded-full font-mono text-[10px] font-bold uppercase tracking-wider flex items-center space-x-1.5 transition-all cursor-pointer ${
                       isVideoMode
-                        ? 'bg-amber-400 text-black font-extrabold shadow-lg shadow-amber-500/20'
-                        : 'bg-neutral-900 text-amber-400 border border-amber-500/30 hover:bg-neutral-800'
+                        ? 'btn-dark-blue text-white font-extrabold'
+                        : 'bg-[#070f24] text-blue-400 border border-blue-500/35 hover:bg-blue-950/60'
                     }`}
                   >
                     <Film className="w-3.5 h-3.5" />
@@ -336,7 +340,7 @@ export default function CarDetailsModal({
               {/* Main Media Viewport */}
               <div className="space-y-3">
                 <div
-                  className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-900 rounded-lg border border-neutral-800 group"
+                  className="relative aspect-[16/10] w-full overflow-hidden bg-[#050a18] rounded-2xl border border-blue-500/25 group shadow-xl"
                   onClick={() => !isVideoMode && currentImages.length > 0 && setIsLightboxOpen(true)}
                   onTouchStart={handleTouchStart}
                   onTouchEnd={(e) => handleTouchEnd(e, false)}
@@ -370,7 +374,7 @@ export default function CarDetailsModal({
                       <div className="absolute top-3 left-3 z-20 flex items-center space-x-1.5">
                         <button
                           onClick={(e) => { e.stopPropagation(); setIsLightboxOpen(true); }}
-                          className="p-2 bg-black/80 hover:bg-black text-white rounded border border-white/20 transition-all backdrop-blur-sm cursor-pointer"
+                          className="p-2 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-xl border border-blue-400/30 transition-all backdrop-blur-md cursor-pointer"
                           title="Fullscreen zoom"
                         >
                           <Maximize2 className="w-4 h-4" />
@@ -379,20 +383,20 @@ export default function CarDetailsModal({
                         <button
                           onClick={handleDownloadActiveImage}
                           disabled={isDownloadingSingle}
-                          className="p-2 bg-black/80 hover:bg-black text-white rounded border border-white/20 transition-all backdrop-blur-sm cursor-pointer"
+                          className="p-2 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-xl border border-blue-400/30 transition-all backdrop-blur-md cursor-pointer"
                           title="Download this high-resolution photo"
                         >
                           {isDownloadingSingle ? (
-                            <Loader2 className="w-4 h-4 animate-spin text-amber-400" />
+                            <Loader2 className="w-4 h-4 animate-spin text-blue-400" />
                           ) : (
-                            <Download className="w-4 h-4 text-white hover:text-amber-400 transition-colors" />
+                            <Download className="w-4 h-4 text-white hover:text-blue-300 transition-colors" />
                           )}
                         </button>
 
                         <button
                           onClick={handleDownloadAllImages}
                           disabled={isDownloadingAll}
-                          className="px-2.5 py-1.5 bg-black/80 hover:bg-black text-emerald-400 rounded border border-emerald-500/40 transition-all backdrop-blur-sm cursor-pointer flex items-center space-x-1 font-mono text-[9px] font-bold uppercase"
+                          className="px-3 py-2 bg-[#060d24]/85 hover:bg-blue-800 text-emerald-400 rounded-xl border border-emerald-500/40 transition-all backdrop-blur-md cursor-pointer flex items-center space-x-1 font-mono text-[9px] font-bold uppercase"
                           title="Download all vehicle photos as a ZIP archive"
                         >
                           {isDownloadingAll ? (
@@ -414,7 +418,7 @@ export default function CarDetailsModal({
                         alt={`${car.make} ${car.model}`}
                         loading="eager"
                         decoding="async"
-                        className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.02]"
+                        className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                         referrerPolicy="no-referrer"
                         onError={(e) => {
                           handleImageFallback(e, currentImages[activeImageIdx] || currentImages[0]);
@@ -426,14 +430,14 @@ export default function CarDetailsModal({
                         <>
                           <button
                             onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
-                            className="absolute left-3 top-1/2 -translate-y-1/2 p-2.5 bg-black/70 hover:bg-black text-white rounded-full border border-white/20 transition-colors backdrop-blur-sm cursor-pointer z-10"
+                            className="absolute left-3 top-1/2 -translate-y-1/2 p-2.5 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-full border border-blue-400/40 transition-all backdrop-blur-md cursor-pointer z-10"
                             aria-label="Previous Image"
                           >
                             <ChevronLeft className="w-5 h-5" />
                           </button>
                           <button
                             onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
-                            className="absolute right-3 top-1/2 -translate-y-1/2 p-2.5 bg-black/70 hover:bg-black text-white rounded-full border border-white/20 transition-colors backdrop-blur-sm cursor-pointer z-10"
+                            className="absolute right-3 top-1/2 -translate-y-1/2 p-2.5 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-full border border-blue-400/40 transition-all backdrop-blur-md cursor-pointer z-10"
                             aria-label="Next Image"
                           >
                             <ChevronRight className="w-5 h-5" />
@@ -443,18 +447,18 @@ export default function CarDetailsModal({
                     </>
                   ) : (
                     /* Showroom Empty State */
-                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-950 to-black p-8 text-center space-y-3 select-none">
-                      <div className="w-16 h-16 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white/40 shadow-lg">
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-[#0b1636] via-[#070d20] to-[#040711] p-8 text-center space-y-3 select-none">
+                      <div className="w-16 h-16 rounded-2xl border border-blue-500/30 bg-blue-950/50 flex items-center justify-center text-blue-400 shadow-lg">
                         <Camera className="w-7 h-7" />
                       </div>
                       <div>
                         <span className="font-sans font-black text-white text-base sm:text-lg tracking-wider uppercase block">
                           Studio Photoshoot In Progress
                         </span>
-                        <span className="font-mono text-xs text-neutral-400 tracking-[0.2em] uppercase font-bold block mt-1">
+                        <span className="font-mono text-xs text-blue-400 tracking-[0.2em] uppercase font-bold block mt-1">
                           Official Showroom Imagery Coming Soon
                         </span>
-                        <p className="font-mono text-[11px] text-neutral-500 uppercase tracking-widest max-w-sm mx-auto mt-2">
+                        <p className="font-mono text-[11px] text-neutral-400 uppercase tracking-widest max-w-sm mx-auto mt-2">
                           Contact our Abuja sales team via WhatsApp for real-time video inspection or walkaround.
                         </p>
                       </div>
@@ -466,7 +470,7 @@ export default function CarDetailsModal({
                 {!isVideoMode && currentImages.length > 1 && (
                   <div className="space-y-2 pt-1">
                     <div className="flex justify-between items-center text-[10px] font-mono text-neutral-400 px-0.5">
-                      <span className="uppercase tracking-wider font-bold text-neutral-300">
+                      <span className="uppercase tracking-wider font-bold text-blue-300">
                         GALLERY ({currentImages.length} PHOTOS)
                       </span>
                       <span className="hidden sm:inline text-neutral-500">
@@ -482,10 +486,10 @@ export default function CarDetailsModal({
                         return (
                           <div
                             key={index}
-                            className={`aspect-[16/10] rounded-md overflow-hidden border transition-all relative group cursor-pointer ${
+                            className={`aspect-[16/10] rounded-xl overflow-hidden border transition-all relative group cursor-pointer ${
                               isActive
-                                ? 'border-purple-400 ring-2 ring-purple-400/50 bg-neutral-900 shadow-lg scale-[1.02]'
-                                : 'border-neutral-800 hover:border-neutral-600 bg-neutral-900 opacity-80 hover:opacity-100'
+                                ? 'border-blue-400 ring-2 ring-blue-500/60 bg-[#08122b] shadow-lg scale-[1.03]'
+                                : 'border-blue-500/20 hover:border-blue-400/60 bg-[#050a18] opacity-75 hover:opacity-100'
                             }`}
                             onClick={() => setActiveImageIdx(index)}
                             title={`View ${slotLabel}`}
@@ -503,7 +507,7 @@ export default function CarDetailsModal({
                             />
 
                             <div className="absolute top-1 left-1 z-10">
-                              <span className="bg-black/85 text-white text-[7px] font-mono px-1 rounded">
+                              <span className="bg-black/85 text-white text-[7px] font-mono px-1.5 py-0.5 rounded-full">
                                 #{index + 1}
                               </span>
                             </div>
@@ -516,34 +520,32 @@ export default function CarDetailsModal({
 
                 {/* Photo Actions Bar: Multi-Image Download */}
                 {!isVideoMode && currentImages.length > 0 && (
-                  <div className="flex flex-wrap items-center justify-between gap-2 pt-2 px-1 text-xs border-t border-neutral-800/80">
-                    <span className="font-mono text-[10px] text-neutral-400 tracking-widest uppercase">
+                  <div className="flex flex-wrap items-center justify-between gap-2 pt-2 px-1 text-xs border-t border-blue-500/20">
+                    <span className="font-mono text-[10px] text-blue-300/60 tracking-widest uppercase">
                       PHOTO {activeImageIdx + 1} OF {currentImages.length}
                     </span>
 
                     <div className="flex flex-wrap items-center gap-2">
-                      {/* Download Single Image */}
                       <button
                         type="button"
                         onClick={handleDownloadActiveImage}
                         disabled={isDownloadingSingle}
-                        className="px-2.5 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-neutral-500 text-white rounded flex items-center space-x-1.5 transition-colors cursor-pointer"
+                        className="px-3 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider bg-[#070f24] hover:bg-blue-900/50 border border-blue-500/30 hover:border-blue-400 text-white rounded-xl flex items-center space-x-1.5 transition-colors cursor-pointer"
                         title="Download current photo to your device"
                       >
                         {isDownloadingSingle ? (
-                          <Loader2 className="w-3 h-3 animate-spin text-amber-400" />
+                          <Loader2 className="w-3 h-3 animate-spin text-blue-400" />
                         ) : (
-                          <Download className="w-3 h-3 text-amber-400" />
+                          <Download className="w-3 h-3 text-blue-400" />
                         )}
                         <span>DOWNLOAD PHOTO</span>
                       </button>
 
-                      {/* Multi-Image Download (ZIP Archive) */}
                       <button
                         type="button"
                         onClick={handleDownloadAllImages}
                         disabled={isDownloadingAll}
-                        className="px-2.5 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider bg-neutral-900 hover:bg-neutral-800 border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-white rounded flex items-center space-x-1.5 transition-colors cursor-pointer"
+                        className="px-3 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider bg-[#070f24] hover:bg-emerald-950/50 border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-white rounded-xl flex items-center space-x-1.5 transition-colors cursor-pointer"
                         title="Download all high-resolution photos of this vehicle as a ZIP archive"
                       >
                         {isDownloadingAll ? (
@@ -564,18 +566,18 @@ export default function CarDetailsModal({
               </div>
 
               {/* Vehicle Description Container */}
-              <div className="bg-[#121212] border border-neutral-800/80 rounded-lg p-5 sm:p-6 space-y-4">
-                <h3 className="font-sans text-xs sm:text-sm font-black tracking-[0.2em] uppercase text-white border-b border-neutral-800 pb-3">
+              <div className="bg-[#050a18]/90 border border-blue-500/25 rounded-2xl p-5 sm:p-6 space-y-4">
+                <h3 className="font-sans text-xs sm:text-sm font-black tracking-[0.2em] uppercase text-white border-b border-blue-500/20 pb-3">
                   VEHICLE DESCRIPTION
                 </h3>
-                <p className="text-neutral-300 text-xs sm:text-sm leading-relaxed uppercase tracking-wider font-mono">
+                <p className="text-neutral-200 text-xs sm:text-sm leading-relaxed uppercase tracking-wider font-mono">
                   {car.description || `THIS ${car.year ? `${car.year} ` : ''}${car.make} ${car.model} DELIVERS A FOCUSED MIX OF PERFORMANCE, LUXURY, AND PRESENCE. AVAILABLE FOR IMMEDIATE INSPECTION AND NATIONWIDE DELIVERY IN NIGERIA.`}
                 </p>
 
                 {/* Highlights List */}
                 {car.highlights && car.highlights.length > 0 && (
-                  <div className="pt-2 border-t border-neutral-800/80">
-                    <span className="font-mono text-[9px] uppercase tracking-widest text-neutral-400 block mb-2 font-bold">
+                  <div className="pt-2 border-t border-blue-500/20">
+                    <span className="font-mono text-[9px] uppercase tracking-widest text-blue-400 block mb-2 font-bold">
                       VERIFIED ATTRIBUTES & PACKAGES
                     </span>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono text-neutral-300">
@@ -594,47 +596,47 @@ export default function CarDetailsModal({
             {/* RIGHT COLUMN: Specifications, Pricing & Lead Form */}
             <div className="lg:col-span-5 space-y-5">
               {/* Specification Card */}
-              <div className="bg-[#121212] border border-neutral-800/80 rounded-lg p-5 sm:p-6 space-y-4">
-                <h3 className="font-sans text-xs sm:text-sm font-black tracking-[0.2em] uppercase text-white border-b border-neutral-800 pb-3">
+              <div className="bg-[#050a18]/90 border border-blue-500/25 rounded-2xl p-5 sm:p-6 space-y-4">
+                <h3 className="font-sans text-xs sm:text-sm font-black tracking-[0.2em] uppercase text-white border-b border-blue-500/20 pb-3">
                   SPECIFICATION BRIEF
                 </h3>
 
                 <div className="space-y-2 text-xs font-mono">
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                  <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                     <span className="text-neutral-400 uppercase tracking-wider">STOCK #</span>
                     <span className="font-bold text-white uppercase">{car.stockNumber || car.id}</span>
                   </div>
                   {car.year ? (
-                    <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                    <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                       <span className="text-neutral-400 uppercase tracking-wider">YEAR</span>
                       <span className="font-bold text-white">{car.year}</span>
                     </div>
                   ) : null}
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                  <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                     <span className="text-neutral-400 uppercase tracking-wider">BODY STYLE</span>
                     <span className="font-bold text-white uppercase">{car.bodyType || 'SUV'}</span>
                   </div>
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                  <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                     <span className="text-neutral-400 uppercase tracking-wider">POWERTRAIN</span>
                     <span className="font-bold text-white uppercase truncate max-w-[200px]" title={car.engine}>
                       {car.engine || 'High Performance'}
                     </span>
                   </div>
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                  <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                     <span className="text-neutral-400 uppercase tracking-wider">TRANSMISSION</span>
                     <span className="font-bold text-white uppercase">{car.transmission || 'Automatic'}</span>
                   </div>
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                  <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                     <span className="text-neutral-400 uppercase tracking-wider">DRIVETRAIN</span>
                     <span className="font-bold text-white uppercase">{car.drivetrain || 'AWD'}</span>
                   </div>
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                  <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                     <span className="text-neutral-400 uppercase tracking-wider">PHOTO GALLERY</span>
-                    <span className="font-bold text-purple-400 uppercase">
+                    <span className="font-bold text-blue-400 uppercase">
                       {currentImages.length > 0 ? `${currentImages.length} PHOTOS` : 'COMING SOON'}
                     </span>
                   </div>
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
+                  <div className="flex justify-between py-1.5 border-b border-blue-500/15">
                     <span className="text-neutral-400 uppercase tracking-wider">SHOWROOM LOCATION</span>
                     <span className="font-bold text-white uppercase">{car.location || 'Abuja'}</span>
                   </div>
@@ -646,10 +648,10 @@ export default function CarDetailsModal({
 
                 {/* Investment Price Presentation */}
                 <div className="pt-2">
-                  <span className="font-mono text-[9px] uppercase tracking-widest text-neutral-400 block mb-1">
+                  <span className="font-mono text-[9px] uppercase tracking-widest text-blue-300/60 block mb-1">
                     TOTAL INVESTMENT VALUE
                   </span>
-                  <div className={`font-sans text-2xl sm:text-3xl font-black tracking-tight ${!car.price || car.price <= 0 ? 'text-purple-400' : 'text-white'}`}>
+                  <div className={`font-sans text-2xl sm:text-3xl font-black tracking-tight ${!car.price || car.price <= 0 ? 'text-blue-400 drop-shadow-[0_0_15px_rgba(37,99,235,0.6)]' : 'text-white'}`}>
                     {formatCurrency(car.price)}
                   </div>
                   <span className="font-mono text-[9px] text-emerald-400 font-bold block mt-1 uppercase">
@@ -663,25 +665,25 @@ export default function CarDetailsModal({
                     href={waInquiryUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-purple-600 hover:bg-purple-500 text-white font-extrabold uppercase py-3.5 px-4 rounded text-xs tracking-wider transition-all duration-200 shadow-lg shadow-purple-500/20 flex items-center justify-center space-x-2 cursor-pointer"
+                    className="w-full btn-dark-blue text-white font-extrabold uppercase py-4 px-4 rounded-2xl text-xs tracking-wider flex items-center justify-center space-x-2 cursor-pointer"
                   >
-                    <MessageCircle className="w-4 h-4 text-white" />
+                    <MessageCircle className="w-4 h-4 text-blue-200" />
                     <span>INQUIRE ON WHATSAPP DIRECTLY</span>
                   </a>
                 </div>
               </div>
 
               {/* Inquiry & Test Drive Form */}
-              <div className="bg-[#121212] border border-neutral-800/80 rounded-lg p-5 sm:p-6 space-y-4">
-                <div className="flex justify-between items-center border-b border-neutral-800 pb-3">
+              <div className="bg-[#050a18]/90 border border-blue-500/25 rounded-2xl p-5 sm:p-6 space-y-4">
+                <div className="flex justify-between items-center border-b border-blue-500/20 pb-3">
                   <h3 className="font-sans text-xs sm:text-sm font-black tracking-[0.2em] uppercase text-white">
                     REQUEST PRIVATE CONCIERGE
                   </h3>
-                  <span className="font-mono text-[9px] text-neutral-400 uppercase">ABUJA FLEET</span>
+                  <span className="font-mono text-[9px] text-blue-400 uppercase">ABUJA FLEET</span>
                 </div>
 
                 {submitSuccess ? (
-                  <div className="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded text-center space-y-2">
+                  <div className="p-5 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-center space-y-2">
                     <CheckCircle2 className="w-8 h-8 text-emerald-400 mx-auto" />
                     <p className="font-sans font-bold text-white text-xs uppercase tracking-wider">
                       INQUIRY LOGGED WITH BAKO CONCIERGE
@@ -698,10 +700,10 @@ export default function CarDetailsModal({
                           key={type}
                           type="button"
                           onClick={() => setInquiryType(type)}
-                          className={`py-2 px-2 text-[10px] font-bold uppercase tracking-wider rounded border transition-colors cursor-pointer text-center ${
+                          className={`py-2.5 px-2 text-[10px] font-bold uppercase tracking-wider rounded-xl border transition-all cursor-pointer text-center ${
                             inquiryType === type
-                              ? 'bg-white text-black border-white'
-                              : 'bg-neutral-900 text-neutral-400 border-neutral-800 hover:text-white'
+                              ? 'bg-blue-700 text-white border-blue-400 shadow-[0_0_15px_rgba(37,99,235,0.5)]'
+                              : 'bg-[#081129] text-neutral-400 border-blue-500/20 hover:text-white'
                           }`}
                         >
                           {type}
@@ -710,7 +712,7 @@ export default function CarDetailsModal({
                     </div>
 
                     <div>
-                      <label className="text-[10px] text-neutral-400 uppercase tracking-wider block mb-1">
+                      <label className="text-[10px] text-blue-200/60 uppercase tracking-wider block mb-1">
                         FULL NAME *
                       </label>
                       <input
@@ -719,12 +721,12 @@ export default function CarDetailsModal({
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                         placeholder="e.g. Alhaji Ibrahim"
-                        className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-white placeholder-neutral-600 focus:border-white focus:outline-none text-xs font-mono"
+                        className="w-full bg-[#081129] border border-blue-500/30 rounded-xl px-3.5 py-2.5 text-white placeholder-neutral-500 focus:border-blue-400 focus:outline-none text-xs font-mono"
                       />
                     </div>
 
                     <div>
-                      <label className="text-[10px] text-neutral-400 uppercase tracking-wider block mb-1">
+                      <label className="text-[10px] text-blue-200/60 uppercase tracking-wider block mb-1">
                         PHONE NUMBER (WHATSAPP) *
                       </label>
                       <input
@@ -733,12 +735,12 @@ export default function CarDetailsModal({
                         value={phoneNumber}
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         placeholder="0816 733 2017"
-                        className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-white placeholder-neutral-600 focus:border-white focus:outline-none text-xs font-mono"
+                        className="w-full bg-[#081129] border border-blue-500/30 rounded-xl px-3.5 py-2.5 text-white placeholder-neutral-500 focus:border-blue-400 focus:outline-none text-xs font-mono"
                       />
                     </div>
 
                     <div>
-                      <label className="text-[10px] text-neutral-400 uppercase tracking-wider block mb-1">
+                      <label className="text-[10px] text-blue-200/60 uppercase tracking-wider block mb-1">
                         EMAIL ADDRESS
                       </label>
                       <input
@@ -746,12 +748,12 @@ export default function CarDetailsModal({
                         value={emailAddress}
                         onChange={(e) => setEmailAddress(e.target.value)}
                         placeholder="vip@client.ng"
-                        className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-white placeholder-neutral-600 focus:border-white focus:outline-none text-xs font-mono"
+                        className="w-full bg-[#081129] border border-blue-500/30 rounded-xl px-3.5 py-2.5 text-white placeholder-neutral-500 focus:border-blue-400 focus:outline-none text-xs font-mono"
                       />
                     </div>
 
                     <div>
-                      <label className="text-[10px] text-neutral-400 uppercase tracking-wider block mb-1">
+                      <label className="text-[10px] text-blue-200/60 uppercase tracking-wider block mb-1">
                         INSPECTION NOTES / REQUESTS
                       </label>
                       <textarea
@@ -759,18 +761,18 @@ export default function CarDetailsModal({
                         value={inquiryMessage}
                         onChange={(e) => setInquiryMessage(e.target.value)}
                         placeholder="Request showroom inspection or specific vehicle questions..."
-                        className="w-full bg-neutral-900 border border-neutral-800 rounded px-3 py-2 text-white placeholder-neutral-600 focus:border-white focus:outline-none text-xs font-mono resize-none"
+                        className="w-full bg-[#081129] border border-blue-500/30 rounded-xl px-3.5 py-2.5 text-white placeholder-neutral-500 focus:border-blue-400 focus:outline-none text-xs font-mono resize-none"
                       />
                     </div>
 
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-3 bg-white hover:bg-neutral-200 text-black font-sans font-black text-xs uppercase tracking-widest rounded transition-colors duration-200 cursor-pointer flex items-center justify-center space-x-1.5"
+                      className="w-full py-3.5 btn-liquid-white font-sans font-black text-xs uppercase tracking-widest rounded-2xl cursor-pointer flex items-center justify-center space-x-1.5"
                     >
                       {isSubmitting ? (
                         <>
-                          <Loader2 className="w-4 h-4 animate-spin text-black" />
+                          <Loader2 className="w-4 h-4 animate-spin" />
                           <span>TRANSMITTING...</span>
                         </>
                       ) : (
@@ -783,7 +785,7 @@ export default function CarDetailsModal({
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Fullscreen Lightbox Zoom Modal */}
       <AnimatePresence>
@@ -801,21 +803,21 @@ export default function CarDetailsModal({
               <img
                 src={getImageUrl(currentImages[activeImageIdx] || currentImages[0], 2048)}
                 alt={`${car.make} ${car.model}`}
-                className="max-w-full max-h-[90vh] object-contain"
+                className="max-w-full max-h-[90vh] object-contain rounded-2xl"
               />
 
               {/* Lightbox Controls */}
               <div className="absolute top-4 right-4 flex items-center space-x-2">
                 <button
                   onClick={handleDownloadActiveImage}
-                  className="p-2.5 bg-black/80 hover:bg-black text-white rounded-full border border-white/20 transition-all cursor-pointer"
+                  className="p-2.5 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-full border border-blue-400/40 transition-all cursor-pointer"
                   title="Download Photo"
                 >
-                  <Download className="w-5 h-5 text-amber-400" />
+                  <Download className="w-5 h-5 text-blue-300" />
                 </button>
                 <button
                   onClick={() => setIsLightboxOpen(false)}
-                  className="p-2.5 bg-black/80 hover:bg-black text-white rounded-full border border-white/20 transition-all cursor-pointer"
+                  className="p-2.5 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-full border border-blue-400/40 transition-all cursor-pointer"
                   title="Close Lightbox"
                 >
                   <X className="w-5 h-5" />
@@ -826,20 +828,20 @@ export default function CarDetailsModal({
                 <>
                   <button
                     onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/80 hover:bg-black text-white rounded-full border border-white/20 transition-colors cursor-pointer"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-full border border-blue-400/40 transition-colors cursor-pointer"
                   >
                     <ChevronLeft className="w-6 h-6" />
                   </button>
                   <button
                     onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/80 hover:bg-black text-white rounded-full border border-white/20 transition-colors cursor-pointer"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-[#060d24]/85 hover:bg-blue-700 text-white rounded-full border border-blue-400/40 transition-colors cursor-pointer"
                   >
                     <ChevronRight className="w-6 h-6" />
                   </button>
                 </>
               )}
 
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 px-4 py-1.5 rounded-full border border-white/10 text-white font-mono text-xs font-bold uppercase tracking-wider">
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#060d24]/85 px-5 py-2 rounded-full border border-blue-500/30 text-white font-mono text-xs font-bold uppercase tracking-wider">
                 Photo {activeImageIdx + 1} of {currentImages.length}
               </div>
             </div>

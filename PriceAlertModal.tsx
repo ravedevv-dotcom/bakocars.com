@@ -4,7 +4,7 @@
  */
 
 import React, { useState, FormEvent } from 'react';
-import { X, Bell, CheckCircle2, ShieldCheck, Mail, Phone, User } from 'lucide-react';
+import { X, Bell, CheckCircle2, Mail, Phone, User } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Car } from './types';
 
@@ -34,17 +34,17 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
       onClick={onClose}
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0.95, y: 15 }}
+        initial={{ opacity: 0, scale: 0.94, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.95, y: 15 }}
+        exit={{ opacity: 0, scale: 0.94, y: 20 }}
         onClick={(e) => e.stopPropagation()}
-        className="bg-black border border-white/20 w-full max-w-lg p-6 sm:p-8 rounded-none shadow-2xl relative glow"
+        className="bako-curved-card w-full max-w-lg p-6 sm:p-8 rounded-3xl shadow-2xl relative glow"
         id="price-alert-modal-box"
       >
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-white/50 hover:text-white border border-white/10 hover:border-white bg-black transition-all cursor-pointer"
+          className="absolute top-4 right-4 p-2.5 text-white/60 hover:text-white border border-blue-500/30 hover:border-blue-400 bg-[#060d24] rounded-xl transition-all cursor-pointer"
           id="close-price-alert-modal-btn"
           aria-label="Close"
         >
@@ -53,12 +53,12 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
 
         {!submitted ? (
           <form onSubmit={handleSubmit} className="space-y-5">
-            <div className="flex items-center space-x-3 pb-4 border-b border-white/10">
-              <div className="p-3 bg-white/10 border border-white/20 rounded-none text-white">
-                <Bell className="w-5 h-5 text-purple-400 animate-bounce" />
+            <div className="flex items-center space-x-3 pb-4 border-b border-blue-500/20">
+              <div className="p-3 bg-blue-950/60 border border-blue-500/40 rounded-2xl text-blue-400">
+                <Bell className="w-5 h-5 animate-bounce" />
               </div>
               <div>
-                <span className="font-mono text-[9px] text-purple-400 uppercase tracking-[0.2em] block font-bold">
+                <span className="font-mono text-[9px] text-blue-400 uppercase tracking-[0.2em] block font-bold">
                   PRICE NOTIFICATION ALERT
                 </span>
                 <h3 className="font-sans text-lg font-black text-white uppercase tracking-wider">
@@ -68,34 +68,34 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
             </div>
 
             {/* Vehicle Summary box */}
-            <div className="bg-white/5 border border-white/10 p-3.5 rounded-none flex items-center justify-between">
+            <div className="bg-[#050a18] border border-blue-500/25 p-4 rounded-2xl flex items-center justify-between">
               <div>
-                <span className="font-mono text-[9px] text-white/40 uppercase tracking-widest block">SELECTED VEHICLE</span>
+                <span className="font-mono text-[9px] text-blue-300/50 uppercase tracking-widest block">SELECTED VEHICLE</span>
                 <span className="font-sans text-xs font-bold text-white uppercase">{car.year} {car.make} {car.model}</span>
                 <span className="font-mono text-[9px] text-white/50 block mt-0.5">STOCK NO: {car.stockNumber || 'N/A'}</span>
               </div>
-              <span className="bg-purple-600 text-white font-mono text-[9px] font-bold px-2.5 py-1 uppercase tracking-widest">
+              <span className="bg-blue-700 text-white rounded-full font-mono text-[9px] font-bold px-3 py-1 uppercase tracking-widest shadow">
                 INQUIRE LISTING
               </span>
             </div>
 
-            <p className="text-white/70 text-xs leading-relaxed uppercase font-mono tracking-wider">
+            <p className="text-white/75 text-xs leading-relaxed uppercase font-mono tracking-wider">
               Enter your details below to receive instant SMS & Email notifications when Bako Cars updates the official market valuation for this vehicle.
             </p>
 
             <div className="space-y-3.5">
               <div>
-                <label htmlFor="alert-name" className="block text-[9px] font-mono text-white/40 uppercase tracking-[0.2em] mb-1">
+                <label htmlFor="alert-name" className="block text-[9px] font-mono text-blue-200/60 uppercase tracking-[0.2em] mb-1">
                   FULL NAME
                 </label>
                 <div className="relative">
-                  <User className="w-4 h-4 text-white/40 absolute left-3 top-3 pointer-events-none" />
+                  <User className="w-4 h-4 text-blue-400/60 absolute left-3.5 top-3 pointer-events-none" />
                   <input
                     id="alert-name"
                     type="text"
                     required
                     placeholder="Your Full Name"
-                    className="block w-full pl-9 pr-3.5 py-2.5 bg-black border border-white/20 rounded-none text-xs text-white focus:outline-none focus:border-white"
+                    className="block w-full pl-10 pr-4 py-2.5 bg-[#081129] border border-blue-500/30 rounded-xl text-xs text-white focus:outline-none focus:border-blue-400"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -103,17 +103,17 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
               </div>
 
               <div>
-                <label htmlFor="alert-email" className="block text-[9px] font-mono text-white/40 uppercase tracking-[0.2em] mb-1">
+                <label htmlFor="alert-email" className="block text-[9px] font-mono text-blue-200/60 uppercase tracking-[0.2em] mb-1">
                   EMAIL ADDRESS
                 </label>
                 <div className="relative">
-                  <Mail className="w-4 h-4 text-white/40 absolute left-3 top-3 pointer-events-none" />
+                  <Mail className="w-4 h-4 text-blue-400/60 absolute left-3.5 top-3 pointer-events-none" />
                   <input
                     id="alert-email"
                     type="email"
                     required
                     placeholder="yourname@example.com"
-                    className="block w-full pl-9 pr-3.5 py-2.5 bg-black border border-white/20 rounded-none text-xs text-white focus:outline-none focus:border-white"
+                    className="block w-full pl-10 pr-4 py-2.5 bg-[#081129] border border-blue-500/30 rounded-xl text-xs text-white focus:outline-none focus:border-blue-400"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -121,17 +121,17 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
               </div>
 
               <div>
-                <label htmlFor="alert-phone" className="block text-[9px] font-mono text-white/40 uppercase tracking-[0.2em] mb-1">
+                <label htmlFor="alert-phone" className="block text-[9px] font-mono text-blue-200/60 uppercase tracking-[0.2em] mb-1">
                   PHONE NUMBER
                 </label>
                 <div className="relative">
-                  <Phone className="w-4 h-4 text-white/40 absolute left-3 top-3 pointer-events-none" />
+                  <Phone className="w-4 h-4 text-blue-400/60 absolute left-3.5 top-3 pointer-events-none" />
                   <input
                     id="alert-phone"
                     type="tel"
                     required
                     placeholder="e.g. 0816 733 2017"
-                    className="block w-full pl-9 pr-3.5 py-2.5 bg-black border border-white/20 rounded-none text-xs text-white focus:outline-none focus:border-white"
+                    className="block w-full pl-10 pr-4 py-2.5 bg-[#081129] border border-blue-500/30 rounded-xl text-xs text-white focus:outline-none focus:border-blue-400"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
@@ -141,21 +141,21 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
 
             <button
               type="submit"
-              className="w-full bg-white hover:bg-white/90 text-black font-sans text-xs font-bold tracking-[0.2em] py-3.5 rounded-none transition-all cursor-pointer uppercase shadow-lg flex items-center justify-center space-x-2"
+              className="w-full btn-dark-blue text-white font-sans text-xs font-bold tracking-[0.2em] py-4 rounded-2xl cursor-pointer uppercase flex items-center justify-center space-x-2"
               id="subscribe-price-alert-submit-btn"
             >
-              <Bell className="w-4 h-4 text-black" />
+              <Bell className="w-4 h-4 text-blue-200" />
               <span>ACTIVATE PRICE ALERT</span>
             </button>
           </form>
         ) : (
           <div className="text-center py-6 space-y-4">
-            <div className="w-12 h-12 bg-green-600/20 border border-green-500 rounded-none flex items-center justify-center mx-auto text-green-400">
+            <div className="w-14 h-14 bg-blue-950/60 border border-blue-500/40 rounded-2xl flex items-center justify-center mx-auto text-blue-400">
               <CheckCircle2 className="w-6 h-6 animate-bounce" />
             </div>
             <div>
               <h3 className="font-sans text-sm font-bold tracking-[0.2em] uppercase text-white">PRICE ALERT ACTIVATED!</h3>
-              <p className="text-[9px] font-mono text-purple-400 tracking-widest mt-1 uppercase">
+              <p className="text-[9px] font-mono text-blue-400 tracking-widest mt-1 uppercase">
                 SUBSCRIPTION STORED FOR {car.make} {car.model}
               </p>
             </div>
@@ -164,7 +164,7 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
             </p>
             <button
               onClick={onClose}
-              className="px-6 py-2.5 border border-white/20 bg-black hover:border-white hover:text-white text-[10px] font-mono rounded-none tracking-widest transition-colors cursor-pointer uppercase"
+              className="px-6 py-3 btn-dark-blue text-white text-[10px] font-mono rounded-full tracking-widest cursor-pointer uppercase"
             >
               DONE / CLOSE
             </button>
