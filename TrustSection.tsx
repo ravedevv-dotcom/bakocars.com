@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { motion } from 'motion/react';
 import { ShieldCheck, Award, FileCheck, Truck, Headphones, Lock } from 'lucide-react';
 
 export default function TrustSection() {
@@ -47,15 +46,15 @@ export default function TrustSection() {
   ];
 
   return (
-    <div className="py-12 bg-gradient-to-b from-[#08132e] via-[#060c1f] to-[#050811] border border-blue-500/25 rounded-3xl p-6 sm:p-10 shadow-2xl">
+    <div className="py-12 bg-[#090909] border border-white/10 rounded-2xl p-6 sm:p-10">
       <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
-        <span className="font-mono text-[10px] text-blue-400 uppercase tracking-[0.28em] font-bold block">
+        <span className="font-mono text-[10px] text-blue-500 uppercase tracking-[0.28em] font-bold block">
           UNCOMPROMISED PEDIGREE
         </span>
         <h3 className="font-display text-2xl sm:text-3xl font-extrabold tracking-[0.06em] text-white uppercase">
           THE BAKO INTEGRITY GUARANTEE
         </h3>
-        <p className="text-blue-200/60 text-xs sm:text-sm font-sans">
+        <p className="text-white/55 text-xs sm:text-sm font-sans">
           Every key handover at our Abuja showroom is backed by verified documentation and mechanical excellence.
         </p>
       </div>
@@ -64,25 +63,20 @@ export default function TrustSection() {
         {trustPillars.map((pillar, idx) => {
           const Icon = pillar.icon;
           return (
-            <motion.div
+            <div
               key={idx}
-              initial={{ opacity: 0, y: 20, scale: 0.96 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: idx * 0.08 }}
-              whileHover={{ y: -8, scale: 1.02 }}
-              className="bako-curved-card rounded-2xl p-6 space-y-3.5 group"
+              className="bg-black border border-white/10 hover:border-blue-600/50 rounded-xl p-6 space-y-3 transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-11 h-11 rounded-2xl border border-blue-500/40 flex items-center justify-center bg-blue-950/60 text-blue-400 shadow-[0_0_20px_rgba(29,78,216,0.35)] group-hover:bg-blue-700 group-hover:text-white transition-all">
+              <div className="w-10 h-10 rounded-lg border border-blue-500/35 flex items-center justify-center bg-blue-950/30 text-blue-500">
                 <Icon className="w-5 h-5" />
               </div>
-              <h4 className="font-display text-sm font-bold tracking-wide text-white uppercase group-hover:text-blue-200 transition-colors">
+              <h4 className="font-display text-sm font-bold tracking-wide text-white uppercase">
                 {pillar.title}
               </h4>
-              <p className="text-xs text-blue-100/65 font-sans leading-relaxed">
+              <p className="text-xs text-white/60 font-sans leading-relaxed">
                 {pillar.description}
               </p>
-            </motion.div>
+            </div>
           );
         })}
       </div>

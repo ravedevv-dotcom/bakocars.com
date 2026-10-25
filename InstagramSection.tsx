@@ -4,75 +4,71 @@
  */
 
 import { motion } from 'motion/react';
-import { getImageUrl, handleImageFallback } from './types';
+import { Instagram, ExternalLink } from 'lucide-react';
+import { handleImageFallback } from './types';
 
 export default function InstagramSection() {
   return (
-    <section className="w-full bg-[#050811] py-14 relative overflow-hidden" id="instagram-brand-section">
-      {/* INSTAGRAM account linking integration and brand visual title */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+    <section className="w-full bg-black py-12 border-b border-white/5" id="instagram-brand-section">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
-          {/* LEFT: Stacked title matching the "OUR INSTAGRAM" handwritten design */}
+          {/* LEFT: Cleanly aligned "CURATED BY Bako Cars" + "OUR INSTAGRAM" */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5 text-left space-y-2 relative"
+            transition={{ duration: 0.55 }}
+            className="lg:col-span-5 text-left space-y-1.5"
           >
-            <div className="relative inline-block mt-2">
-              <span className="font-display tracking-[0.2em] text-blue-300/60 text-[10px] uppercase font-bold">
+            <div className="flex items-baseline gap-3">
+              <span className="font-display tracking-[0.22em] text-white/55 text-[10px] sm:text-[11px] uppercase font-bold">
                 CURATED BY
               </span>
-              {/* Handwritten overlapping "Bako Cars" */}
-              <span className="absolute -top-[23px] left-[78px] font-signature text-[40px] text-white/95 italic opacity-95 pointer-events-none whitespace-nowrap transform -rotate-2 select-none drop-shadow-[0_0_15px_rgba(37,99,235,0.6)]">
+              <span className="font-signature text-[36px] sm:text-[44px] text-white/95 leading-none transform -rotate-2 select-none inline-block">
                 Bako Cars
               </span>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col pt-0.5">
               <h3 className="font-sans font-black tracking-widest text-2xl sm:text-3xl leading-none uppercase">
-                <span className="text-blue-500 drop-shadow-[0_0_16px_rgba(29,78,216,0.75)] mr-2">OUR</span>
+                <span className="text-blue-500 mr-2">OUR</span>
                 <span className="text-white">INSTAGRAM</span>
               </h3>
-              {/* Rich Dark Blue Signature bar line */}
-              <div className="h-1 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 w-28 mt-3.5 rounded-full shadow-[0_0_15px_rgba(37,99,235,0.85)]" />
+              {/* Dark Blue Signature bar line */}
+              <div className="h-[3px] bg-blue-700 w-28 mt-3 rounded-full" />
             </div>
           </motion.div>
 
-          {/* RIGHT: Curved Clickable Instagram Account Widget Block */}
+          {/* RIGHT: Clickable Instagram Account Widget Card */}
           <motion.div
-            initial={{ opacity: 0, x: 30, scale: 0.96 }}
-            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.55, delay: 0.1 }}
             className="lg:col-span-7"
           >
-            <motion.a
-              whileHover={{ y: -8, scale: 1.015 }}
-              whileTap={{ scale: 0.98 }}
+            <a
               href="https://www.instagram.com/bakocars_/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col sm:flex-row items-center justify-between gap-6 bako-curved-card rounded-3xl p-6 sm:p-8 w-full group relative"
+              className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-[#090909] border border-white/10 hover:border-blue-600/60 p-6 sm:p-7 rounded-2xl hover:bg-neutral-950 transition-all duration-300 w-full group relative shadow-[0_18px_45px_rgba(0,0,0,0.85)] cursor-pointer"
               id="instagram-profile-widget"
             >
-              <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 w-full text-center sm:text-left">
-                {/* 1. Glowing Profile Avatar Frame with Bako Cars brand icon */}
+              <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-5 w-full text-center sm:text-left">
+                {/* 1. Profile Avatar Frame with properly fitted Bako Cars logo */}
                 <div className="relative shrink-0 mx-auto sm:mx-0">
-                  <div className="p-[3px] rounded-full bg-gradient-to-tr from-blue-700 via-blue-500 to-blue-300 shadow-[0_0_25px_rgba(37,99,235,0.65)] transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
-                    <div className="p-[2px] bg-[#050811] rounded-full">
-                      <div className="w-[74px] h-[74px] rounded-full bg-black border border-blue-500/30 overflow-hidden relative">
+                  <div className="p-[2.5px] rounded-full bg-gradient-to-tr from-[#feda75] via-[#d62976] to-[#962fbf] transition-transform duration-300 group-hover:scale-105">
+                    <div className="p-[2px] bg-black rounded-full">
+                      <div className="w-[74px] h-[74px] rounded-full bg-[#181818] border border-white/10 overflow-hidden flex items-center justify-center p-1">
                         <img
-                          src={getImageUrl('bakocars logo.jpg')}
+                          src="/bakocars-logo.jpg"
                           alt="Bako Cars Logo"
-                          className="w-full h-full object-cover object-center"
+                          className="w-full h-full object-contain object-center rounded-full"
                           loading="eager"
                           decoding="async"
-                          referrerPolicy="no-referrer"
                           onError={(e) => {
-                            handleImageFallback(e, 'bakocars logo.jpg');
+                            handleImageFallback(e, 'bakocars-logo.jpg');
                           }}
                         />
                       </div>
@@ -81,27 +77,27 @@ export default function InstagramSection() {
                 </div>
 
                 {/* 2. Username, Sub-text information, Stats and bio details */}
-                <div className="flex-grow space-y-2.5">
+                <div className="flex-grow space-y-2">
                   <div>
                     <div className="flex items-center justify-center sm:justify-start space-x-1.5">
                       <span className="font-sans font-extrabold tracking-wide text-white text-base sm:text-lg group-hover:text-blue-400 transition-colors">
                         bakocars_
                       </span>
-                      {/* Verification blue emblem check mark */}
-                      <div className="bg-blue-600 text-white rounded-full p-[2px] flex items-center justify-center w-4 h-4 shrink-0 shadow-[0_0_10px_rgba(37,99,235,0.8)]">
+                      {/* Verified check mark */}
+                      <div className="bg-[#0095f6] text-white rounded-full p-[2px] flex items-center justify-center w-4 h-4 shrink-0">
                         <svg viewBox="0 0 24 24" className="w-[10px] h-[10px] fill-current" stroke="currentColor" strokeWidth="4">
                           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                         </svg>
                       </div>
                     </div>
 
-                    <p className="font-sans text-xs text-blue-200/70 tracking-wider font-medium mt-0.5">
-                      IBakocars
+                    <p className="font-sans text-xs text-white/60 tracking-wider font-medium mt-0.5">
+                      Bako Cars Nigeria • Abuja Luxury Showroom
                     </p>
                   </div>
 
                   {/* Verification Statistics counts */}
-                  <div className="flex items-center justify-center sm:justify-start space-x-4 font-mono text-[10px] sm:text-[11px] tracking-wide text-white/50 uppercase">
+                  <div className="flex items-center justify-center sm:justify-start space-x-4 font-mono text-[10px] sm:text-[11px] tracking-wide text-white/45 uppercase">
                     <span>
                       <strong className="text-white font-sans mr-0.5 font-bold">1,271</strong> posts
                     </span>
@@ -115,13 +111,15 @@ export default function InstagramSection() {
                 </div>
               </div>
 
-              {/* Curved Action Pill CTA */}
-              <div className="self-center shrink-0 pt-2 sm:pt-0">
-                <div className="btn-dark-blue px-6 py-3.5 rounded-full text-white text-[10px] font-mono font-bold uppercase tracking-[0.2em] w-full sm:w-auto text-center cursor-pointer">
-                  FOLLOW PAGE
+              {/* Action Button */}
+              <div className="self-center shrink-0 w-full sm:w-auto pt-2 sm:pt-0">
+                <div className="px-5 py-3 rounded-xl bg-blue-800 group-hover:bg-blue-700 border border-blue-500/40 text-white transition-all duration-300 text-[10px] font-mono font-bold uppercase tracking-[0.2em] w-full sm:w-auto text-center flex items-center justify-center space-x-2 shadow-lg shadow-blue-900/30">
+                  <Instagram className="w-3.5 h-3.5" />
+                  <span>FOLLOW PAGE</span>
+                  <ExternalLink className="w-3 h-3 opacity-80" />
                 </div>
               </div>
-            </motion.a>
+            </a>
           </motion.div>
 
         </div>

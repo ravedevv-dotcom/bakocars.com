@@ -8,14 +8,14 @@
 
 @layer base {
   html {
-    background-color: #050811;
+    background-color: #000000;
     color: #ffffff;
     font-family: 'Plus Jakarta Sans', sans-serif;
     scroll-behavior: smooth;
   }
 
   body {
-    background-color: #050811;
+    background-color: #000000;
     color: #ffffff;
     font-family: 'Plus Jakarta Sans', sans-serif;
     overflow-x: hidden;
@@ -24,6 +24,10 @@
   h1, h2, .font-syne {
     font-family: 'Syne', sans-serif;
   }
+}
+
+.font-signature {
+  font-family: 'Alex Brush', cursive;
 }
 
 .font-display {
@@ -39,181 +43,127 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Rich Dark Blue Ambient Background */
+/* Pure Black Luxury Ambient Background with subtle top vignette */
 .ambient-glow {
   background:
-    radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.16) 0%, transparent 55%),
-    radial-gradient(circle at 85% 25%, rgba(30, 64, 175, 0.14) 0%, transparent 50%),
-    radial-gradient(circle at 15% 65%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-    #050811;
+    radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.06) 0%, transparent 55%),
+    #000000;
 }
 
-/* Noticeable Sapphire Glow */
 .glow {
-  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.8), 0 0 40px rgba(29, 78, 216, 0.25);
-}
-
-.glow-blue-intense {
-  box-shadow: 0 20px 50px -10px rgba(29, 78, 216, 0.5), 0 0 35px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(29, 78, 216, 0.12);
 }
 
 .glass {
-  background: rgba(8, 15, 34, 0.82);
+  background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
-/* Curved 3D Interactive Card */
+/* Mature Black Curved Card with Subtle Dark Blue Hover Accent */
 .bako-curved-card {
-  background: linear-gradient(165deg, rgba(13, 25, 56, 0.85) 0%, rgba(8, 13, 28, 0.95) 55%, rgba(5, 8, 17, 0.98) 100%);
-  border: 1px solid rgba(37, 99, 235, 0.28);
-  border-radius: 1.5rem;
+  background: linear-gradient(165deg, #111111 0%, #0a0a0a 60%, #060606 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
   transition:
-    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .bako-curved-card:hover {
-  transform: translateY(-10px) scale(1.015);
-  border-color: rgba(59, 130, 246, 0.75);
+  border-color: rgba(29, 78, 216, 0.65);
   box-shadow:
-    0 28px 60px -12px rgba(0, 0, 0, 0.9),
-    0 0 40px rgba(29, 78, 216, 0.45),
-    inset 0 1px 0 rgba(96, 165, 250, 0.3);
+    0 24px 55px -12px rgba(0, 0, 0, 0.95),
+    0 0 28px rgba(29, 78, 216, 0.25);
 }
 
 .obsidian-card {
-  background: linear-gradient(165deg, #0b1530 0%, #070c1c 100%);
-  border: 1px solid rgba(37, 99, 235, 0.28);
-  border-radius: 1.5rem;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.45s ease;
 }
 
 .obsidian-card:hover {
-  transform: translateY(-8px) scale(1.01);
-  border-color: rgba(59, 130, 246, 0.7);
-  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.85), 0 0 35px rgba(29, 78, 216, 0.4);
+  border-color: rgba(29, 78, 216, 0.6);
+  box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.9), 0 0 25px rgba(29, 78, 216, 0.2);
 }
 
-/* Signature Dark Royal Blue Button with Animated Light Sweep */
+/* Secondary Accent Button: Rich Dark Royal Blue */
 .btn-dark-blue {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #172554 0%, #1e40af 45%, #1d4ed8 80%, #2563eb 100%);
+  background: linear-gradient(135deg, #172554 0%, #1e3a8a 50%, #1d4ed8 100%);
   color: #ffffff;
-  border: 1px solid rgba(96, 165, 250, 0.4);
-  box-shadow: 0 10px 30px -5px rgba(29, 78, 216, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  box-shadow: 0 8px 24px -4px rgba(29, 78, 216, 0.45);
   transition:
-    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.35s ease,
-    filter 0.35s ease;
-}
-
-.btn-dark-blue::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -60%;
-  width: 45%;
-  height: 200%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.28),
-    transparent
-  );
-  transform: rotate(25deg);
-  animation: shimmer-sweep 3.5s infinite ease-in-out;
-  pointer-events: none;
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s ease,
+    filter 0.3s ease;
 }
 
 .btn-dark-blue:hover {
-  transform: translateY(-3px) scale(1.02);
-  border-color: rgba(147, 197, 253, 0.85);
-  box-shadow: 0 16px 40px -4px rgba(37, 99, 235, 0.8), 0 0 25px rgba(59, 130, 246, 0.5);
-  filter: brightness(1.12);
+  transform: translateY(-2px);
+  border-color: rgba(96, 165, 250, 0.75);
+  box-shadow: 0 12px 32px -4px rgba(29, 78, 216, 0.65);
+  filter: brightness(1.1);
 }
 
 .btn-dark-blue:active {
   transform: translateY(0) scale(0.98);
 }
 
-/* Liquid Button Hover Effect */
+/* High-Contrast White CTA Button */
 .btn-liquid-white {
   position: relative;
   overflow: hidden;
-  background-color: #FFFFFF;
-  color: #050811;
-  transition: color 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-liquid-white::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 0;
+  background-color: #ffffff;
+  color: #000000;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease;
 }
 
 .btn-liquid-white:hover {
-  color: #FFFFFF;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 14px 35px rgba(29, 78, 216, 0.55);
+  background-color: #e5e5e5;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
 }
 
-.btn-liquid-white:hover::before {
-  transform: scaleX(1);
-}
-
-.btn-liquid-white > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* Heavy Noticeable Keyframe Animations */
-@keyframes shimmer-sweep {
-  0% {
-    left: -60%;
+/* Autonomous Per-Card 3D Idle Floating & Perspective Tilt (Reference Video Effect) */
+@keyframes bako-card-idle-3d {
+  0%, 100% {
+    transform: perspective(950px) rotateX(2.8deg) rotateY(-3.8deg) translateY(0px);
   }
-  45%, 100% {
-    left: 130%;
+  25% {
+    transform: perspective(950px) rotateX(-2.2deg) rotateY(3.5deg) translateY(-5px);
   }
+  50% {
+    transform: perspective(950px) rotateX(-3.2deg) rotateY(-2.5deg) translateY(-2px);
+  }
+  75% {
+    transform: perspective(950px) rotateX(2.4deg) rotateY(4.2deg) translateY(-6px);
+  }
+}
+
+.animate-card-idle-3d {
+  animation: bako-card-idle-3d 6.5s ease-in-out infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 @keyframes float-slow {
   0%, 100% {
-    transform: translateY(0px) scale(1);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-12px) scale(1.03);
-  }
-}
-
-@keyframes pulse-blue-ring {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(29, 78, 216, 0.35), 0 0 30px rgba(30, 64, 175, 0.2);
-    border-color: rgba(37, 99, 235, 0.35);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(37, 99, 235, 0.7), 0 0 60px rgba(29, 78, 216, 0.4);
-    border-color: rgba(96, 165, 250, 0.8);
-  }
-}
-
-@keyframes gradient-pan {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+    transform: translateY(-8px);
   }
 }
 
@@ -221,13 +171,19 @@
   animation: float-slow 5s ease-in-out infinite;
 }
 
-.animate-pulse-blue {
-  animation: pulse-blue-ring 3s ease-in-out infinite;
+@keyframes pulse-blue-ring {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(29, 78, 216, 0.25);
+    border-color: rgba(37, 99, 235, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(29, 78, 216, 0.5);
+    border-color: rgba(59, 130, 246, 0.7);
+  }
 }
 
-.animate-gradient-pan {
-  background-size: 200% 200%;
-  animation: gradient-pan 4s ease infinite;
+.animate-pulse-blue {
+  animation: pulse-blue-ring 3s ease-in-out infinite;
 }
 
 @keyframes bako-shimmer {
@@ -240,26 +196,7 @@
 }
 
 .bako-skeleton {
-  background: linear-gradient(90deg, #080f24 25%, #172554 50%, #080f24 75%);
+  background: linear-gradient(90deg, #141414 25%, #222222 50%, #141414 75%);
   background-size: 200% 100%;
   animation: bako-shimmer 1.6s infinite linear;
-}
-
-@keyframes soundwave {
-  0%, 100% {
-    transform: scaleY(0.35);
-  }
-  50% {
-    transform: scaleY(1);
-  }
-}
-
-.animate-soundwave-1 {
-  animation: soundwave 0.65s ease-in-out infinite;
-}
-.animate-soundwave-2 {
-  animation: soundwave 0.5s ease-in-out infinite 0.15s;
-}
-.animate-soundwave-3 {
-  animation: soundwave 0.75s ease-in-out infinite 0.3s;
 }

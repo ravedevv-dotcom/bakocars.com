@@ -4,7 +4,6 @@
  */
 
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
 import { Search, RotateCcw, ArrowRight } from 'lucide-react';
 import { FilterState } from './types';
 
@@ -96,26 +95,23 @@ export default function InventoryFilters({
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 15 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="bako-curved-card rounded-3xl p-6 sm:p-8 mb-10 shadow-2xl"
+    <div
+      className="bg-[#090909] border border-white/10 rounded-2xl p-5 sm:p-7 mb-10 shadow-xl"
       id="inventory-filters-container"
     >
-      <form onSubmit={handleSearchSubmit} className="space-y-5">
+      <form onSubmit={handleSearchSubmit} className="space-y-4">
         <div className="flex flex-col sm:flex-row items-stretch gap-3">
           <div className="relative flex-1">
             <label htmlFor="inventory-search-input" className="sr-only">
               Search Showroom Fleet
             </label>
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <Search className="h-5 w-5 text-blue-400" />
+              <Search className="h-4 w-4 text-neutral-400" />
             </div>
             <input
               id="inventory-search-input"
               type="text"
-              className="block w-full pl-12 pr-4 py-4 bg-[#050a18] border border-blue-500/30 rounded-2xl text-sm sm:text-base text-white placeholder-blue-200/40 transition-all focus:border-blue-400 focus:shadow-[0_0_20px_rgba(37,99,235,0.3)] focus:outline-none font-sans"
+              className="block w-full pl-11 pr-4 py-3.5 bg-black border border-white/15 rounded-xl text-sm text-white placeholder-neutral-500 transition-colors focus:border-blue-500 focus:outline-none font-sans"
               placeholder="Search model, make, trim or spec (e.g., G63, Range Rover, ML350, C300, Corolla)..."
               value={filters.search}
               onChange={(e) => setFilters({ ...filters, search: e.target.value })}
@@ -130,7 +126,7 @@ export default function InventoryFilters({
 
           <button
             type="submit"
-            className="btn-dark-blue px-8 py-4 font-display text-xs font-extrabold tracking-[0.2em] uppercase rounded-2xl cursor-pointer flex items-center justify-center space-x-2 shrink-0"
+            className="bg-blue-800 hover:bg-blue-700 border border-blue-500/40 text-white px-7 py-3.5 font-display text-xs font-extrabold tracking-[0.2em] uppercase rounded-xl cursor-pointer flex items-center justify-center space-x-2 shrink-0 transition-colors"
             id="search-action-btn"
           >
             <span>SEARCH FLEET</span>
@@ -138,7 +134,7 @@ export default function InventoryFilters({
           </button>
         </div>
 
-        {/* Interactive Curved Pill Filter Controls */}
+        {/* Filter Controls */}
         <div className="flex flex-wrap items-center justify-between gap-4 pt-1">
           <div className="flex flex-wrap items-center gap-2" id="quick-search-tags">
             {QUICK_TAGS.map((tag) => {
@@ -155,10 +151,10 @@ export default function InventoryFilters({
                     setFilters({ ...filters, search: nextQuery });
                     if (nextQuery) addRecentSearchAndTrigger(nextQuery);
                   }}
-                  className={`px-4 py-1.5 text-[10px] font-mono font-bold transition-all cursor-pointer rounded-full uppercase tracking-wider border whitespace-nowrap shrink-0 ${
+                  className={`px-3.5 py-1.5 text-[10px] font-mono font-bold transition-all cursor-pointer rounded-lg uppercase tracking-wider border whitespace-nowrap shrink-0 ${
                     isSelected
-                      ? 'bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 text-white border-blue-400 shadow-[0_0_15px_rgba(37,99,235,0.6)] scale-105'
-                      : 'bg-[#050a18] hover:border-blue-400/60 border-blue-500/25 text-blue-200/70 hover:text-white'
+                      ? 'bg-blue-800 text-white border-blue-500'
+                      : 'bg-black hover:border-white/30 border-white/10 text-neutral-400 hover:text-white'
                   }`}
                   id={`quick-tag-${tag}`}
                 >
@@ -170,12 +166,12 @@ export default function InventoryFilters({
 
           {/* Sort Selector */}
           <div className="flex items-center space-x-2 shrink-0">
-            <span className="text-[10px] font-mono uppercase text-blue-300/60 tracking-wider">
+            <span className="text-[10px] font-mono uppercase text-neutral-400 tracking-wider">
               SORT:
             </span>
             <select
               id="inventory-sort-select"
-              className="bg-[#050a18] border border-blue-500/30 rounded-xl px-3.5 py-2 text-[10px] font-mono text-white uppercase tracking-wider cursor-pointer focus:border-blue-400 focus:outline-none"
+              className="bg-black border border-white/15 rounded-xl px-3.5 py-2 text-[10px] font-mono text-white uppercase tracking-wider cursor-pointer focus:border-blue-500 focus:outline-none"
               value={filters.sortBy}
               onChange={(e) => {
                 setFilters({ ...filters, sortBy: e.target.value as FilterState['sortBy'] });
@@ -190,9 +186,9 @@ export default function InventoryFilters({
       </form>
 
       {/* Results Bar & Clear Control */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-4 mt-4 border-t border-blue-500/20 gap-3">
-        <div className="font-mono text-xs text-blue-200/70 tracking-wider uppercase">
-          SHOWING <span className="text-blue-400 font-bold tabular-nums">{resultsCount}</span> DUTY-PAID VEHICLES IN ABUJA SHOWROOM
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-4 mt-4 border-t border-white/10 gap-3">
+        <div className="font-mono text-xs text-neutral-400 tracking-wider uppercase">
+          SHOWING <span className="text-white font-bold tabular-nums">{resultsCount}</span> DUTY-PAID VEHICLES IN ABUJA SHOWROOM
         </div>
 
         {filters.search && (
@@ -207,6 +203,6 @@ export default function InventoryFilters({
           </button>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }
