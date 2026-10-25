@@ -1,202 +1,85 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
 
 @theme {
-  --font-display: 'Syne', sans-serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-script: "Alex Brush", cursive;
 }
 
 @layer base {
-  html {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    scroll-behavior: smooth;
-  }
-
   body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: var(--font-sans);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
-  h1, h2, .font-syne {
-    font-family: 'Syne', sans-serif;
+  /* Custom sleek dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e3a8a;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
   }
 }
 
-.font-signature {
-  font-family: 'Alex Brush', cursive;
+.font-script {
+  font-family: "Alex Brush", cursive !important;
 }
 
-.font-display {
-  font-family: 'Syne', sans-serif;
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.font-sans {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
 }
 
-.font-mono {
-  font-family: 'JetBrains Mono', monospace;
-  font-variant-numeric: tabular-nums;
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
-/* Pure Black Luxury Ambient Background with subtle top vignette */
-.ambient-glow {
-  background:
-    radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.06) 0%, transparent 55%),
-    #000000;
-}
-
-.glow {
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(29, 78, 216, 0.12);
-}
-
-.glass {
-  background: rgba(10, 10, 10, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-}
-
-/* Mature Black Curved Card with Subtle Dark Blue Hover Accent */
-.bako-curved-card {
-  background: linear-gradient(165deg, #111111 0%, #0a0a0a 60%, #060606 100%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1.25rem;
-  transition:
-    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.bako-curved-card:hover {
-  border-color: rgba(29, 78, 216, 0.65);
-  box-shadow:
-    0 24px 55px -12px rgba(0, 0, 0, 0.95),
-    0 0 28px rgba(29, 78, 216, 0.25);
-}
-
-.obsidian-card {
-  background: #0a0a0a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1.25rem;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.45s ease;
-}
-
-.obsidian-card:hover {
-  border-color: rgba(29, 78, 216, 0.6);
-  box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.9), 0 0 25px rgba(29, 78, 216, 0.2);
-}
-
-/* Secondary Accent Button: Rich Dark Royal Blue */
-.btn-dark-blue {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #172554 0%, #1e3a8a 50%, #1d4ed8 100%);
-  color: #ffffff;
-  border: 1px solid rgba(59, 130, 246, 0.35);
-  box-shadow: 0 8px 24px -4px rgba(29, 78, 216, 0.45);
-  transition:
-    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.3s ease,
-    filter 0.3s ease;
-}
-
-.btn-dark-blue:hover {
-  transform: translateY(-2px);
-  border-color: rgba(96, 165, 250, 0.75);
-  box-shadow: 0 12px 32px -4px rgba(29, 78, 216, 0.65);
-  filter: brightness(1.1);
-}
-
-.btn-dark-blue:active {
-  transform: translateY(0) scale(0.98);
-}
-
-/* High-Contrast White CTA Button */
-.btn-liquid-white {
-  position: relative;
-  overflow: hidden;
-  background-color: #ffffff;
-  color: #000000;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.3s ease;
-}
-
-.btn-liquid-white:hover {
-  background-color: #e5e5e5;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
-}
-
-/* Autonomous Per-Card 3D Idle Floating & Perspective Tilt (Reference Video Effect) */
-@keyframes bako-card-idle-3d {
+/* Smooth, poised 3D idle motion for Home Page Popular Listings cards */
+@keyframes bakoCardIdle3D {
   0%, 100% {
-    transform: perspective(950px) rotateX(2.8deg) rotateY(-3.8deg) translateY(0px);
+    transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0px);
   }
   25% {
-    transform: perspective(950px) rotateX(-2.2deg) rotateY(3.5deg) translateY(-5px);
+    transform: perspective(1200px) rotateX(2.4deg) rotateY(-3.2deg) translateY(-4px);
   }
   50% {
-    transform: perspective(950px) rotateX(-3.2deg) rotateY(-2.5deg) translateY(-2px);
+    transform: perspective(1200px) rotateX(-1.5deg) rotateY(2.2deg) translateY(-2px);
   }
   75% {
-    transform: perspective(950px) rotateX(2.4deg) rotateY(4.2deg) translateY(-6px);
+    transform: perspective(1200px) rotateX(-2.4deg) rotateY(3.2deg) translateY(-4px);
   }
 }
 
-.animate-card-idle-3d {
-  animation: bako-card-idle-3d 6.5s ease-in-out infinite;
+.bako-card-idle-3d {
+  animation: bakoCardIdle3D 8.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
   transform-style: preserve-3d;
   will-change: transform;
 }
 
-@keyframes float-slow {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.animate-float-slow {
-  animation: float-slow 5s ease-in-out infinite;
-}
-
-@keyframes pulse-blue-ring {
-  0%, 100% {
-    box-shadow: 0 0 12px rgba(29, 78, 216, 0.25);
-    border-color: rgba(37, 99, 235, 0.35);
-  }
-  50% {
-    box-shadow: 0 0 24px rgba(29, 78, 216, 0.5);
-    border-color: rgba(59, 130, 246, 0.7);
-  }
-}
-
-.animate-pulse-blue {
-  animation: pulse-blue-ring 3s ease-in-out infinite;
-}
-
-@keyframes bako-shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-.bako-skeleton {
-  background: linear-gradient(90deg, #141414 25%, #222222 50%, #141414 75%);
-  background-size: 200% 100%;
-  animation: bako-shimmer 1.6s infinite linear;
+.bako-perspective-wrap {
+  perspective: 1200px;
 }
