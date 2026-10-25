@@ -24,8 +24,8 @@ export default function MapSection() {
         {/* Section Heading matching other brand pages */}
         <div className="text-center sm:text-left mb-10 pb-4 border-b border-white/5 relative">
           <h2 className="font-sans font-black tracking-widest text-xl sm:text-2xl text-white uppercase relative inline-block">
-            <span className="text-sky-400 mr-2">OUR</span> SHOWROOM
-            <span className="absolute -bottom-4 left-0 h-[3px] bg-sky-400 w-20 block" />
+            <span className="text-purple-400 mr-2">OUR</span> SHOWROOM
+            <span className="absolute -bottom-4 left-0 h-[3px] bg-purple-400 w-20 block" />
           </h2>
           <p className="mt-2 text-white/40 font-mono text-[9px] tracking-[0.4em] uppercase">
             VISIT BAKO CARS PRESTIGE GALLERY
@@ -44,7 +44,7 @@ export default function MapSection() {
                   <h3 className="font-sans font-extrabold tracking-widest text-white text-base sm:text-lg uppercase">
                     BAKO CARS
                   </h3>
-                  <div className="h-[2px] bg-sky-400 w-12" />
+                  <div className="h-[2px] bg-purple-400 w-12" />
                 </div>
                 {/* Visual signature watermark */}
                 <div className="text-right select-none pointer-events-none opacity-40">
@@ -62,7 +62,7 @@ export default function MapSection() {
                 
                 {/* 1. Address card */}
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 border border-white/10 bg-black text-sky-400 rounded-none shrink-0 mt-0.5">
+                  <div className="p-2 border border-white/10 bg-black text-purple-400 rounded-none shrink-0 mt-0.5">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div className="space-y-1 flex-grow">
@@ -75,7 +75,7 @@ export default function MapSection() {
 
                 {/* 2. Opening hours */}
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 border border-white/10 bg-black text-sky-400 rounded-none shrink-0 mt-0.5">
+                  <div className="p-2 border border-white/10 bg-black text-purple-400 rounded-none shrink-0 mt-0.5">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div className="space-y-1">
@@ -87,7 +87,7 @@ export default function MapSection() {
                       </p>
                       <p className="flex justify-between w-48 font-mono">
                         <span className="text-white/50">SUNDAYS:</span>
-                        <span className="text-sky-400 font-bold tracking-wider">APPOINTMENT</span>
+                        <span className="text-purple-400 font-bold tracking-wider">APPOINTMENT</span>
                       </p>
                     </div>
                   </div>
@@ -95,7 +95,7 @@ export default function MapSection() {
 
                 {/* 3. Direct dealer contacts */}
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 border border-white/10 bg-black text-sky-400 rounded-none shrink-0 mt-0.5">
+                  <div className="p-2 border border-white/10 bg-black text-purple-400 rounded-none shrink-0 mt-0.5">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div className="space-y-1">
@@ -134,7 +134,7 @@ export default function MapSection() {
                 >
                   {copied ? (
                     <>
-                      <Check className="w-3.5 h-3.5 text-green-500 shrink-0" />
+                      <Check className="w-3.5 h-3.5 text-purple-400 shrink-0" />
                       <span>COPIED</span>
                     </>
                   ) : (
@@ -150,7 +150,7 @@ export default function MapSection() {
                   href={mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-3 border border-white/10 bg-black text-white hover:bg-sky-400 hover:text-black hover:border-sky-400 transition-all duration-300 text-[10px] font-mono font-bold uppercase tracking-wider flex items-center justify-center space-x-2 rounded-none text-center"
+                  className="px-4 py-3 border border-white/10 bg-black text-white hover:bg-purple-500 hover:text-white hover:border-purple-400 transition-all duration-300 text-[10px] font-mono font-bold uppercase tracking-wider flex items-center justify-center space-x-2 rounded-none text-center"
                 >
                   <Navigation className="w-3.5 h-3.5 shrink-0" />
                   <span>DIRECTIONS</span>
@@ -163,16 +163,16 @@ export default function MapSection() {
                 href="https://wa.me/message/JCOUM7I4Z2XVB1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3.5 border border-white/5 bg-neutral-950 hover:bg-[#111] hover:border-white/10 transition-colors w-full group text-left"
+                className="flex items-center justify-between p-3.5 border border-purple-500/20 bg-neutral-950 hover:bg-[#111] hover:border-purple-500/50 transition-colors w-full group text-left"
               >
                 <div className="flex items-center space-x-3">
-                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-purple-500 animate-pulse" />
                   <div>
-                    <p className="font-sans font-bold text-white text-[11px]">WHATSAPP DIGITAL CONCIERGE</p>
+                    <p className="font-sans font-bold text-white text-[11px] group-hover:text-purple-300 transition-colors">WHATSAPP DIGITAL CONCIERGE</p>
                     <p className="font-mono text-[9px] text-white/40 tracking-wide">CONNECT IN REAL-TIME FOR ENQUIRIES</p>
                   </div>
                 </div>
-                <ExternalLink className="w-3 h-3 text-white/30 group-hover:text-emerald-400 group-hover:translate-x-0.5 transition-all shrink-0" />
+                <ExternalLink className="w-3 h-3 text-purple-400/60 group-hover:text-purple-400 group-hover:translate-x-0.5 transition-all shrink-0" />
               </a>
             </div>
 
@@ -195,7 +195,7 @@ export default function MapSection() {
               
               {/* Glassmorphic minimalist styling elements */}
               <div className="absolute top-4 left-4 bg-black/80 border border-white/10 px-3 py-1.5 backdrop-blur-md flex items-center space-x-2 select-none pointer-events-none">
-                <span className="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
                 <span className="font-mono text-[8px] tracking-widest text-white/90 uppercase font-black">
                   BAKO CARS ABUJA HQ
                 </span>

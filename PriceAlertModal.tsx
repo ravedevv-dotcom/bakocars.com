@@ -55,10 +55,10 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="flex items-center space-x-3 pb-4 border-b border-white/10">
               <div className="p-3 bg-white/10 border border-white/20 rounded-none text-white">
-                <Bell className="w-5 h-5 text-sky-400 animate-bounce" />
+                <Bell className="w-5 h-5 text-purple-400 animate-bounce" />
               </div>
               <div>
-                <span className="font-mono text-[9px] text-sky-400 uppercase tracking-[0.2em] block font-bold">
+                <span className="font-mono text-[9px] text-purple-400 uppercase tracking-[0.2em] block font-bold">
                   PRICE NOTIFICATION ALERT
                 </span>
                 <h3 className="font-sans text-lg font-black text-white uppercase tracking-wider">
@@ -74,7 +74,7 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
                 <span className="font-sans text-xs font-bold text-white uppercase">{car.year} {car.make} {car.model}</span>
                 <span className="font-mono text-[9px] text-white/50 block mt-0.5">STOCK NO: {car.stockNumber || 'N/A'}</span>
               </div>
-              <span className="bg-green-600 text-white font-mono text-[9px] font-bold px-2.5 py-1 uppercase tracking-widest">
+              <span className="bg-purple-600 text-white font-mono text-[9px] font-bold px-2.5 py-1 uppercase tracking-widest">
                 INQUIRE LISTING
               </span>
             </div>
@@ -155,7 +155,7 @@ export default function PriceAlertModal({ car, onClose }: PriceAlertModalProps) 
             </div>
             <div>
               <h3 className="font-sans text-sm font-bold tracking-[0.2em] uppercase text-white">PRICE ALERT ACTIVATED!</h3>
-              <p className="text-[9px] font-mono text-sky-400 tracking-widest mt-1 uppercase">
+              <p className="text-[9px] font-mono text-purple-400 tracking-widest mt-1 uppercase">
                 SUBSCRIPTION STORED FOR {car.make} {car.model}
               </p>
             </div>

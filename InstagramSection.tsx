@@ -28,11 +28,11 @@ export default function InstagramSection() {
 
             <div className="flex flex-col">
               <h3 className="font-sans font-black tracking-widest text-2xl sm:text-3xl leading-none uppercase">
-                <span className="text-sky-400 mr-2">OUR</span>
+                <span className="text-purple-400 mr-2">OUR</span>
                 <span className="text-white">INSTAGRAM</span>
               </h3>
-              {/* Sky Blue Signature bar line */}
-              <div className="h-[3px] bg-sky-400 w-28 mt-3" />
+              {/* Purple Signature bar line */}
+              <div className="h-[3px] bg-purple-400 w-28 mt-3" />
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export default function InstagramSection() {
                 <div className="flex-grow space-y-2.5">
                   <div>
                     <div className="flex items-center justify-center sm:justify-start space-x-1.5">
-                      <span className="font-sans font-extrabold tracking-wide text-white text-base sm:text-lg group-hover:text-sky-400 transition-colors">
+                      <span className="font-sans font-extrabold tracking-wide text-white text-base sm:text-lg group-hover:text-purple-400 transition-colors">
                         bakocars_
                       </span>
                       {/* Verification blue emblem check mark */}

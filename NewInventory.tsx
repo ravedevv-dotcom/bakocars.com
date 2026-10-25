@@ -70,8 +70,8 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
           <div className="space-y-2">
             <h2 className="font-sans font-black tracking-widest text-xl sm:text-2xl text-white uppercase relative inline-block">
               POPULAR LISTINGS
-              {/* Thin blue underline bar spanning exactly under the heading */}
-              <span className="absolute -bottom-4 left-0 h-[3px] bg-sky-400 w-24 block" />
+              {/* Thin purple underline bar spanning exactly under the heading */}
+              <span className="absolute -bottom-4 left-0 h-[3px] bg-purple-400 w-24 block" />
             </h2>
           </div>
 
@@ -103,7 +103,7 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
           {NEW_ARRIVALS.map((car) => (
             <div
               key={car.id}
-              className="shrink-0 w-[290px] sm:w-[325px] snap-start bg-[#090909] border border-white/10 hover:border-white/30 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-500/10"
+              className="shrink-0 w-[290px] sm:w-[325px] snap-start bg-[#090909] border border-white/10 hover:border-white/30 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/10"
             >
               {/* 1. Image block with Watermark */}
               <div 
@@ -149,7 +149,7 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
                   {car.year} {car.make}
                 </h3>
                 {/* Highlight text title */}
-                <h4 className="font-sans text-[12px] sm:text-[13px] font-black text-white hover:text-sky-400 transition-colors uppercase tracking-wider mt-1.5 line-clamp-1">
+                <h4 className="font-sans text-[12px] sm:text-[13px] font-black text-white hover:text-purple-400 transition-colors uppercase tracking-wider mt-1.5 line-clamp-1">
                   {car.model}
                 </h4>
 
@@ -183,7 +183,7 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
                     {car.price && car.price > 0 ? (
                       formatCurrency(car.price)
                     ) : (
-                      <span className="text-xs font-mono text-emerald-400">INQUIRE FOR PRICE</span>
+                      <span className="text-xs font-mono text-purple-400">INQUIRE FOR PRICE</span>
                     )}
                   </div>
                   <button
@@ -191,7 +191,7 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
                     className="p-1.5 border border-white/10 hover:border-white text-white/60 hover:text-white transition-colors"
                     title="Share link"
                   >
-                    {copiedId === car.id ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Share2 className="w-3.5 h-3.5" />}
+                    {copiedId === car.id ? <Check className="w-3.5 h-3.5 text-purple-400" /> : <Share2 className="w-3.5 h-3.5" />}
                   </button>
                 </div>
               </div>
@@ -205,9 +205,9 @@ export default function NewInventory({ onViewDetails, onGetApproved, onOpenPrice
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-sans font-black text-[10px] uppercase tracking-[0.15em] py-2.5 transition-colors duration-300 flex items-center justify-center space-x-1.5 cursor-pointer block text-center"
+                  className="w-full bg-purple-600 hover:bg-purple-500 text-white font-sans font-black text-[10px] uppercase tracking-[0.15em] py-2.5 transition-colors duration-300 flex items-center justify-center space-x-1.5 cursor-pointer block text-center shadow-md shadow-purple-500/20"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
+                  <MessageCircle className="w-3.5 h-3.5 text-white" />
                   <span>INQUIRE ON WHATSAPP</span>
                 </a>
               </div>

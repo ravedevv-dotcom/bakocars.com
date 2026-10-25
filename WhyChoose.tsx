@@ -33,7 +33,7 @@ export default function WhyChoose() {
     <div className="border border-white/10 p-6 sm:p-8 bg-zinc-950" id="why-bako-grid">
       <div className="mb-6 pb-4 border-b border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
-          <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-sky-400 font-bold block">
+          <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-purple-400 font-bold block">
             THE BAKO ADVANTAGE
           </span>
           <h3 className="font-sans text-lg sm:text-xl font-black uppercase text-white tracking-wider">
@@ -50,11 +50,11 @@ export default function WhyChoose() {
           const Icon = reason.icon;
           return (
             <div key={index} className="space-y-3 bg-[#0a0a0a] border border-white/10 p-5 hover:border-white/30 transition-colors">
-              <div className="w-9 h-9 border border-sky-400/30 flex items-center justify-center text-sky-400 bg-sky-950/20">
+              <div className="w-9 h-9 border border-purple-400/30 flex items-center justify-center text-purple-400 bg-purple-950/20">
                 <Icon className="w-4 h-4" />
               </div>
               <div>
-                <span className="font-mono text-[8px] text-sky-400 uppercase tracking-widest font-semibold block">
+                <span className="font-mono text-[8px] text-purple-400 uppercase tracking-widest font-semibold block">
                   {reason.subtitle}
                 </span>
                 <h4 className="font-sans text-xs font-bold uppercase tracking-wider text-white mt-0.5">

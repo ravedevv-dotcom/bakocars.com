@@ -107,7 +107,7 @@ export default function Hero({
               
               {/* Overlayed Signature text "by Bako" or "OF Nigeria" */}
               <div className="relative -mt-2 sm:-mt-4 mr-4 sm:mr-8">
-                <span className="font-signature text-[32px] sm:text-[54px] md:text-[62px] text-sky-400 font-extralight block transform -rotate-3 leading-none italic select-none">
+                <span className="font-signature text-[32px] sm:text-[54px] md:text-[62px] text-purple-400 font-extralight block transform -rotate-3 leading-none italic select-none">
                   of Nigeria
                 </span>
               </div>
@@ -123,10 +123,10 @@ export default function Hero({
               {/* Button A: Solid dark action with borders */}
               <button
                 onClick={onExploreClick}
-                className="w-full sm:w-auto bg-black/80 hover:bg-black border border-white/25 hover:border-sky-400 text-white font-sans font-extrabold text-[11px] sm:text-[12px] tracking-[0.25em] uppercase px-7 py-3.5 hover:text-sky-400 transition-all duration-300 rounded-none flex items-center justify-center space-x-2 group cursor-pointer"
+                className="w-full sm:w-auto bg-black/80 hover:bg-black border border-white/25 hover:border-purple-400 text-white font-sans font-extrabold text-[11px] sm:text-[12px] tracking-[0.25em] uppercase px-7 py-3.5 hover:text-purple-400 transition-all duration-300 rounded-none flex items-center justify-center space-x-2 group cursor-pointer"
               >
                 <span>BROWSE INVENTORY</span>
-                <ChevronRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform text-white/60 group-hover:text-sky-400" />
+                <ChevronRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform text-white/60 group-hover:text-purple-400" />
               </button>
 
               {/* Button B: Distinct luxury high-contrast white button */}
@@ -151,7 +151,7 @@ export default function Hero({
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.7 }}
-              className="max-w-md text-left border-l-2 border-sky-400 pl-4 space-y-1"
+              className="max-w-md text-left border-l-2 border-purple-400 pl-4 space-y-1"
             >
               <p className="font-mono text-[9px] sm:text-[10px] text-white/80 leading-relaxed tracking-wider uppercase">
                 BAKO CARS OF NIGERIA OFFERS A CURATED SELECTION OF EXOTIC AND LUXURY VEHICLES, ALONG WITH BESPOKE CUSTOM BUILDS. FROM SUPERCARS TO REIMAGINED G-WAGONS, EVERY VEHICLE IS HAND SELECTED TO IMPRESS.
@@ -170,7 +170,7 @@ export default function Hero({
                 href="https://www.threads.com/@bakocars_?xmt=AQG07HJ0ePjlGe-joG58PzkaeklhTkn4ijgP3i3vSmEOy_o"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-black/65 border border-white/10 flex items-center justify-center text-white/70 hover:text-sky-400 hover:border-sky-400/40 transition-all duration-300 rounded-none group"
+                className="w-9 h-9 bg-black/65 border border-white/10 flex items-center justify-center text-white/70 hover:text-purple-400 hover:border-purple-400/40 transition-all duration-300 rounded-none group"
                 title="Threads"
               >
                 <svg className="w-4 h-4 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -184,7 +184,7 @@ export default function Hero({
                 href="https://www.instagram.com/bakocars_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-black/65 border border-white/10 flex items-center justify-center text-white/70 hover:text-sky-400 hover:border-sky-400/40 transition-all duration-300 rounded-none group"
+                className="w-9 h-9 bg-black/65 border border-white/10 flex items-center justify-center text-white/70 hover:text-purple-400 hover:border-purple-400/40 transition-all duration-300 rounded-none group"
                 title="Instagram"
               >
                 <svg className="w-4 h-4 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">

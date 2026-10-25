@@ -170,7 +170,7 @@ export default function Header({
                       }}
                       className={`text-left font-sans text-xs sm:text-sm tracking-[0.25em] uppercase py-2 cursor-pointer transition-colors ${
                         activeSection === item.id
-                          ? 'text-white font-bold border-l-2 border-sky-400 pl-3'
+                          ? 'text-white font-bold border-l-2 border-purple-400 pl-3'
                           : 'text-white/60 hover:text-white hover:pl-1 transition-all'
                       }`}
                       id={`mobile-nav-link-${item.id}`}

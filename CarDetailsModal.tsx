@@ -260,7 +260,7 @@ export default function CarDetailsModal({
               href={waInquiryUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 border border-neutral-700 hover:border-emerald-500 bg-neutral-900 text-emerald-400 rounded transition-colors"
+              className="p-2 border border-neutral-700 hover:border-purple-500 bg-neutral-900 text-purple-400 rounded transition-colors"
               title="Chat on WhatsApp"
             >
               <MessageCircle className="w-4 h-4" />
@@ -484,7 +484,7 @@ export default function CarDetailsModal({
                             key={index}
                             className={`aspect-[16/10] rounded-md overflow-hidden border transition-all relative group cursor-pointer ${
                               isActive
-                                ? 'border-sky-400 ring-2 ring-sky-400/50 bg-neutral-900 shadow-lg scale-[1.02]'
+                                ? 'border-purple-400 ring-2 ring-purple-400/50 bg-neutral-900 shadow-lg scale-[1.02]'
                                 : 'border-neutral-800 hover:border-neutral-600 bg-neutral-900 opacity-80 hover:opacity-100'
                             }`}
                             onClick={() => setActiveImageIdx(index)}
@@ -630,7 +630,7 @@ export default function CarDetailsModal({
                   </div>
                   <div className="flex justify-between py-1.5 border-b border-neutral-800/60">
                     <span className="text-neutral-400 uppercase tracking-wider">PHOTO GALLERY</span>
-                    <span className="font-bold text-sky-400 uppercase">
+                    <span className="font-bold text-purple-400 uppercase">
                       {currentImages.length > 0 ? `${currentImages.length} PHOTOS` : 'COMING SOON'}
                     </span>
                   </div>
@@ -649,7 +649,7 @@ export default function CarDetailsModal({
                   <span className="font-mono text-[9px] uppercase tracking-widest text-neutral-400 block mb-1">
                     TOTAL INVESTMENT VALUE
                   </span>
-                  <div className="font-sans text-2xl sm:text-3xl font-black text-white tracking-tight">
+                  <div className={`font-sans text-2xl sm:text-3xl font-black tracking-tight ${!car.price || car.price <= 0 ? 'text-purple-400' : 'text-white'}`}>
                     {formatCurrency(car.price)}
                   </div>
                   <span className="font-mono text-[9px] text-emerald-400 font-bold block mt-1 uppercase">
@@ -663,9 +663,9 @@ export default function CarDetailsModal({
                     href={waInquiryUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold uppercase py-3.5 px-4 rounded text-xs tracking-wider transition-all duration-200 shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
+                    className="w-full bg-purple-600 hover:bg-purple-500 text-white font-extrabold uppercase py-3.5 px-4 rounded text-xs tracking-wider transition-all duration-200 shadow-lg shadow-purple-500/20 flex items-center justify-center space-x-2 cursor-pointer"
                   >
-                    <MessageCircle className="w-4 h-4" />
+                    <MessageCircle className="w-4 h-4 text-white" />
                     <span>INQUIRE ON WHATSAPP DIRECTLY</span>
                   </a>
                 </div>

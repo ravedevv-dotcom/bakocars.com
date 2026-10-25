@@ -53,11 +53,11 @@ export default function FaqSection() {
         {/* Core FAQ Stacked Heading from reference image */}
         <div className="text-center mb-12">
           <h2 className="font-sans font-black tracking-widest text-2xl sm:text-3xl uppercase leading-tight">
-            <span className="text-sky-400 mr-2">FREQUENTLY</span>
+            <span className="text-purple-400 mr-2">FREQUENTLY</span>
             <span className="text-white">ASKED</span>
             <span className="block text-white mt-1">QUESTIONS</span>
           </h2>
-          <div className="h-[3px] bg-sky-400 w-24 mx-auto mt-4" />
+          <div className="h-[3px] bg-purple-400 w-24 mx-auto mt-4" />
         </div>
 
         {/* ACCORDION CONTAINER - exact copy of the reference structure */}
@@ -73,14 +73,14 @@ export default function FaqSection() {
                   onClick={() => toggleFaq(idx)}
                   className="w-full py-5 px-6 sm:px-8 flex items-center justify-between text-left focus:outline-none group select-none cursor-pointer"
                 >
-                  <span className="font-sans font-extrabold tracking-widest text-[11px] sm:text-[12px] text-white/90 group-hover:text-sky-400 transition-colors uppercase">
+                  <span className="font-sans font-extrabold tracking-widest text-[11px] sm:text-[12px] text-white/90 group-hover:text-purple-400 transition-colors uppercase">
                     {faq.question}
                   </span>
                   
                   {/* Styled action trigger button exactly like the + in the image */}
-                  <div className="text-white/70 group-hover:text-sky-400 transition-colors shrink-0 pl-4">
+                  <div className="text-white/70 group-hover:text-purple-400 transition-colors shrink-0 pl-4">
                     {isOpen ? (
-                      <Minus className="w-4 h-4 text-sky-400" />
+                      <Minus className="w-4 h-4 text-purple-400" />
                     ) : (
                       <Plus className="w-4 h-4" />
                     )}

@@ -46,7 +46,7 @@ export default function BrandMarquee() {
           {DUPLICATED_BRANDS.map((brand, i) => (
             <div
               key={`marquee-brand-${i}`}
-              className={`text-white hover:text-sky-400 transition-colors duration-300 text-sm sm:text-base cursor-default select-none flex-shrink-0 ${brand.style}`}
+              className={`text-white hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base cursor-default select-none flex-shrink-0 ${brand.style}`}
             >
               {brand.name}
             </div>

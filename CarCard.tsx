@@ -118,7 +118,7 @@ export default function CarCard({
   return (
     <div
       onClick={() => onViewDetails(car)}
-      className="group bg-[#0A0A0A] border border-neutral-800/80 hover:border-neutral-500 rounded-lg overflow-hidden transition-all duration-300 flex flex-col justify-between h-full hover:shadow-2xl hover:shadow-sky-500/10 hover:-translate-y-1 cursor-pointer text-white"
+      className="group bg-[#0A0A0A] border border-neutral-800/80 hover:border-neutral-500 rounded-lg overflow-hidden transition-all duration-300 flex flex-col justify-between h-full hover:shadow-2xl hover:shadow-purple-500/10 hover:-translate-y-1 cursor-pointer text-white"
       id={`car-card-${car.id}`}
     >
       <div>
@@ -263,7 +263,7 @@ export default function CarCard({
             </div>
             <div>
               <span className="text-neutral-500 mr-1.5">GALLERY:</span>
-              <span className="font-bold text-sky-400 uppercase">
+              <span className="font-bold text-purple-400 uppercase">
                 {imagesCount > 0 ? `${imagesCount} PHOTOS` : 'COMING SOON'}
               </span>
             </div>
@@ -348,7 +348,7 @@ export default function CarCard({
       <div className="p-4 sm:p-5 pt-0 mt-1 space-y-3">
         {/* Price Display */}
         <div>
-          <div className="font-sans text-xl sm:text-2xl font-black tracking-tight text-white">
+          <div className={`font-sans text-xl sm:text-2xl font-black tracking-tight ${!car.price || car.price <= 0 ? 'text-purple-400' : 'text-white'}`}>
             {formatCurrency(car.price)}
           </div>
           <div className="font-mono text-[9px] text-neutral-400 font-semibold tracking-wider uppercase mt-0.5">
@@ -363,10 +363,10 @@ export default function CarCard({
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold uppercase py-3 px-4 rounded text-xs tracking-wider transition-all duration-200 shadow-md flex items-center justify-center space-x-2 cursor-pointer"
+            className="w-full bg-purple-600 hover:bg-purple-500 text-white font-extrabold uppercase py-3 px-4 rounded text-xs tracking-wider transition-all duration-200 shadow-md shadow-purple-500/20 flex items-center justify-center space-x-2 cursor-pointer"
             id={`inquire-wa-btn-${car.id}`}
           >
-            <MessageCircle className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4 text-white" />
             <span>INQUIRE ON WHATSAPP</span>
           </a>
         </div>

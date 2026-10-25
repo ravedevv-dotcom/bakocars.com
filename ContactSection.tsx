@@ -53,10 +53,10 @@ export default function ContactSection() {
             href="https://wa.me/message/JCOUM7I4Z2XVB1"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-1.5 bg-green-600 hover:bg-green-500 text-white font-mono text-[9.5px] font-bold uppercase tracking-wider px-3.5 py-2 transition-all shadow-md"
+            className="flex items-center space-x-1.5 bg-purple-600 hover:bg-purple-500 text-white font-mono text-[9.5px] font-bold uppercase tracking-wider px-3.5 py-2 transition-all shadow-md shadow-purple-500/20"
             id="chat-whatsapp-contact-btn"
           >
-            <MessageCircle className="w-3.5 h-3.5" />
+            <MessageCircle className="w-3.5 h-3.5 text-white" />
             <span>CHAT ON WHATSAPP</span>
           </a>
           <a
@@ -95,7 +95,7 @@ export default function ContactSection() {
                   </p>
                   <p className="flex items-center space-x-2.5">
                     <Mail className="w-4 h-4 text-white flex-shrink-0" />
-                    <a href={`mailto:${loc.email}`} className="hover:text-white transition-colors text-sky-400 font-mono">{loc.email}</a>
+                    <a href={`mailto:${loc.email}`} className="hover:text-white transition-colors text-purple-400 font-mono">{loc.email}</a>
                   </p>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function ContactSection() {
               </div>
               <div className="flex justify-between text-white uppercase">
                 <span>SUNDAY Showroom</span>
-                <span className="font-bold underline text-sky-400">APPOINTMENT ONLY</span>
+                <span className="font-bold underline text-purple-400">APPOINTMENT ONLY</span>
               </div>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="font-sans text-sm font-bold tracking-[0.2em] uppercase text-white">MESSAGE DISPATCHED TO BAKO CARS</h3>
-                <p className="text-[9px] font-mono text-sky-400 tracking-widest mt-1 uppercase">DESTINATION: BAKOCARSLTD@YAHOO.COM</p>
+                <p className="text-[9px] font-mono text-purple-400 tracking-widest mt-1 uppercase">DESTINATION: BAKOCARSLTD@YAHOO.COM</p>
               </div>
               <p className="text-white/70 text-xs leading-relaxed max-w-md mx-auto">
                 Thank you, <span className="font-bold text-white">{name}</span>. Your inquiry message has been compiled and dispatched to <span className="text-white font-bold">bakocarsltd@yahoo.com</span>. Our Abuja concierge team will contact you shortly via email or phone at <span className="text-white font-bold">{phone}</span>.
@@ -259,9 +259,9 @@ export default function ContactSection() {
                   href="https://wa.me/message/JCOUM7I4Z2XVB1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-2.5 bg-green-600 hover:bg-green-500 text-white text-[9px] font-mono font-bold rounded-none tracking-widest transition-colors cursor-pointer uppercase flex items-center space-x-1.5"
+                  className="px-6 py-2.5 bg-purple-600 hover:bg-purple-500 text-white text-[9px] font-mono font-bold rounded-none tracking-widest transition-colors cursor-pointer uppercase flex items-center space-x-1.5 shadow-md shadow-purple-500/20"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
+                  <MessageCircle className="w-3.5 h-3.5 text-white" />
                   <span>CONTINUE ON WHATSAPP</span>
                 </a>
               </div>

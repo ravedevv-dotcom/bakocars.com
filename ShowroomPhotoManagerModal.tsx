@@ -129,7 +129,7 @@ export default function ShowroomPhotoManagerModal({
         {/* Header */}
         <div className="flex justify-between items-center px-6 py-4 border-b border-neutral-800 bg-neutral-900/60">
           <div className="flex items-center space-x-3">
-            <div className="p-2.5 rounded-lg bg-sky-500/10 border border-sky-500/30 text-sky-400">
+            <div className="p-2.5 rounded-lg bg-purple-500/10 border border-purple-500/30 text-purple-400">
               <Camera className="w-5 h-5" />
             </div>
             <div>
@@ -170,7 +170,7 @@ export default function ShowroomPhotoManagerModal({
                   placeholder="Filter vehicles by make, model, year (e.g. LX600, TX350, Camry)..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 bg-neutral-900 border border-neutral-800 rounded text-xs font-mono text-white placeholder-neutral-500 focus:border-sky-500 focus:outline-none"
+                  className="w-full pl-9 pr-3 py-2 bg-neutral-900 border border-neutral-800 rounded text-xs font-mono text-white placeholder-neutral-500 focus:border-purple-500 focus:outline-none"
                 />
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function ShowroomPhotoManagerModal({
             <select
               value={selectedCarId}
               onChange={(e) => setSelectedCarId(e.target.value)}
-              className="w-full bg-neutral-900 border border-neutral-700/80 rounded px-3 py-2 text-xs font-mono text-white focus:border-sky-400 focus:outline-none cursor-pointer"
+              className="w-full bg-neutral-900 border border-neutral-700/80 rounded px-3 py-2 text-xs font-mono text-white focus:border-purple-400 focus:outline-none cursor-pointer"
             >
               {filteredVehicles.map((car) => {
                 const photosCount = (car.images || []).length;
@@ -195,7 +195,7 @@ export default function ShowroomPhotoManagerModal({
           {selectedCar && (
             <div className="p-4 bg-neutral-900/80 border border-neutral-800 rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
               <div>
-                <span className="font-mono text-[9px] uppercase tracking-wider text-sky-400 block font-bold">
+                <span className="font-mono text-[9px] uppercase tracking-wider text-purple-400 block font-bold">
                   Target Vehicle:
                 </span>
                 <span className="font-sans font-black text-sm uppercase text-white tracking-wide block">
@@ -215,8 +215,8 @@ export default function ShowroomPhotoManagerModal({
                     <span>Clear</span>
                   </button>
                 )}
-                <span className="font-mono text-xs font-bold text-emerald-400 uppercase">
-                  {selectedCar.price > 0 ? `₦${selectedCar.price.toLocaleString()}` : 'Price on Application'}
+                <span className="font-mono text-xs font-bold text-purple-400 uppercase">
+                  {selectedCar.price > 0 ? `₦${selectedCar.price.toLocaleString()}` : 'INQUIRE FOR PRICE'}
                 </span>
               </div>
             </div>
@@ -234,7 +234,7 @@ export default function ShowroomPhotoManagerModal({
             onClick={() => fileInputRef.current?.click()}
             className={`border-2 border-dashed rounded-xl p-8 text-center transition-all cursor-pointer flex flex-col items-center justify-center space-y-3 ${
               isDragging
-                ? 'border-sky-400 bg-sky-950/20 scale-[0.99]'
+                ? 'border-purple-400 bg-purple-950/20 scale-[0.99]'
                 : 'border-neutral-700 hover:border-neutral-500 bg-neutral-900/40 hover:bg-neutral-900/70'
             }`}
           >
@@ -248,7 +248,7 @@ export default function ShowroomPhotoManagerModal({
               }}
               className="hidden"
             />
-            <div className="w-14 h-14 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center text-sky-400 shadow-lg">
+            <div className="w-14 h-14 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center text-purple-400 shadow-lg">
               <Upload className="w-7 h-7" />
             </div>
             <div>
@@ -261,7 +261,7 @@ export default function ShowroomPhotoManagerModal({
             </div>
             <button
               type="button"
-              className="px-4 py-2 bg-sky-500 hover:bg-sky-400 text-black font-mono font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-lg pointer-events-none mt-2"
+              className="px-4 py-2 bg-purple-500 hover:bg-purple-400 text-white font-mono font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-lg pointer-events-none mt-2"
             >
               Browse Files on Laptop
             </button>

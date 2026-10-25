@@ -142,6 +142,7 @@ export default function App() {
   };
 
   const formatCurrency = (val: number) => {
+    if (!val || val <= 0) return 'INQUIRE FOR PRICE';
     return '₦' + new Intl.NumberFormat('en-US', {
       maximumFractionDigits: 0,
     }).format(val);
@@ -478,7 +479,7 @@ export default function App() {
                             {comparedCarIds.map(carId => {
                               const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
                               return (
-                                <td key={carId} className="py-3 px-4 font-bold text-amber-400">
+                                <td key={carId} className={`py-3 px-4 font-bold ${car && (!car.price || car.price <= 0) ? 'text-purple-400' : 'text-amber-400'}`}>
                                   {car ? formatCurrency(car.price) : '-'}
                                 </td>
                               );
@@ -754,7 +755,7 @@ export default function App() {
                 className="hover:text-white/80 transition-colors flex items-center gap-1.5 font-mono text-[9px] uppercase tracking-widest text-white/30 cursor-pointer pt-1"
                 title="Showroom Staff Media Manager"
               >
-                <Camera className="w-3 h-3 text-sky-400/60" />
+                <Camera className="w-3 h-3 text-purple-400/60" />
                 <span>Showroom Photo Manager</span>
               </button>
             </div>
