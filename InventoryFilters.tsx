@@ -89,7 +89,7 @@ export default function InventoryFilters({
       transmission: 'All',
       minPrice: minInventoryPrice,
       maxPrice: MAX_BUDGET_CEILING,
-      minYear: 2010,
+      minYear: 2000,
       sortBy: 'price-desc',
     });
   };

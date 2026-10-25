@@ -87,7 +87,13 @@ ${SHOWROOM_FLEET_SUMMARY}`;
     }
   });
 
-  const isProduction = process.env.NODE_ENV === 'production' || Boolean(process.env.K_SERVICE);
+  const distPath = path.join(__dirname, 'dist');
+  const distIndexPath = path.join(distPath, 'index.html');
+  const isDevService = Boolean(process.env.K_SERVICE && process.env.K_SERVICE.startsWith('ais-dev'));
+  const isProduction =
+    !isDevService &&
+    (process.env.NODE_ENV === 'production' || Boolean(process.env.K_SERVICE)) &&
+    fs.existsSync(distIndexPath);
 
   if (!isProduction) {
     const { createServer: createViteServer } = await import('vite');
@@ -97,13 +103,14 @@ ${SHOWROOM_FLEET_SUMMARY}`;
     });
     app.use(vite.middlewares);
   } else {
-    const distPath = path.join(__dirname, 'dist');
-    if (fs.existsSync(distPath)) {
-      app.use(express.static(distPath));
-      app.use((_req, res) => {
-        res.sendFile(path.join(distPath, 'index.html'));
-      });
+    const publicPath = path.join(__dirname, 'public');
+    if (fs.existsSync(publicPath)) {
+      app.use(express.static(publicPath));
     }
+    app.use(express.static(distPath));
+    app.use((_req, res) => {
+      res.sendFile(distIndexPath);
+    });
   }
 
   app.listen(PORT, '0.0.0.0', () => {

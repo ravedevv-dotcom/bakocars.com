@@ -15,7 +15,7 @@ import { Car } from './types';
 
 // Collection where individual vehicle photos are stored (<1MB per photo)
 const VEHICLE_PHOTOS_COLLECTION = 'vehicle_photos';
-const GITHUB_REPO = 'ravedevv-dotcom/bakocarsv';
+const GITHUB_REPO = 'ravedevv-dotcom/bakocars.com';
 const getGitHubToken = () => {
   if (typeof window !== 'undefined') {
     return localStorage.getItem('bako_github_token') || '';

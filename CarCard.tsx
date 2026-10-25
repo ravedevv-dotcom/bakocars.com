@@ -127,7 +127,7 @@ const CarCard: React.FC<CarCardProps> = ({
 
           {/* Top Left Status Pill */}
           <div className="absolute top-3 left-3 z-20 flex items-center gap-1.5">
-            {car.status !== 'Available' && (
+            {car.status && car.status !== 'In Stock' && (
               <span className="px-2.5 py-1 text-[10px] font-mono uppercase tracking-wider font-bold rounded bg-blue-800 text-white">
                 {car.status}
               </span>

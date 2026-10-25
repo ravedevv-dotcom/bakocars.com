@@ -10,6 +10,7 @@ import { SHOWROOM_VEHICLES } from './data';
 import CarCard from './CarCard';
 
 interface FavoritesSectionProps {
+  vehicles?: Car[];
   favoriteCarIds: string[];
   onToggleFavorite: (carId: string) => void;
   onViewDetails: (car: Car) => void;
@@ -18,13 +19,14 @@ interface FavoritesSectionProps {
 }
 
 export default function FavoritesSection({
+  vehicles = SHOWROOM_VEHICLES,
   favoriteCarIds,
   onToggleFavorite,
   onViewDetails,
   onOpenPriceAlert,
   onExploreInventory,
 }: FavoritesSectionProps) {
-  const favoriteCars = SHOWROOM_VEHICLES.filter((car) => favoriteCarIds.includes(car.id));
+  const favoriteCars = vehicles.filter((car) => favoriteCarIds.includes(car.id));
 
   const handleClearAll = () => {
     favoriteCarIds.forEach((id) => onToggleFavorite(id));

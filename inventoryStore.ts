@@ -73,64 +73,53 @@ const EXCLUDED_VEHICLE_IDS = new Set([
   'toyota-bulletproof-landcruiser-vxr-2025-11',
 ]);
 
-let latestVehiclesList: Car[] = [];
+let latestVehiclesList: Car[] = SHOWROOM_VEHICLES.filter((c) => !EXCLUDED_VEHICLE_IDS.has(c.id));
 let latestCloudPhotosMap: Record<string, string[]> = {};
+const activeSubscribers = new Set<(vehicles: Car[]) => void>();
 
-export function subscribeToVehicles(onUpdate: (vehicles: Car[]) => void) {
-  let isSubscribed = true;
-
-  const dispatchMerged = async () => {
-    if (!isSubscribed) return;
-    try {
-      const localMap = await getAllUploadedImagesMap().catch(() => ({}));
-
-      const activeShowroom = latestVehiclesList.length > 0
+export async function refreshLocalVehicles(): Promise<void> {
+  try {
+    const localMap = await getAllUploadedImagesMap().catch(() => ({}));
+    const activeShowroom =
+      latestVehiclesList.length > 0
         ? latestVehiclesList
         : SHOWROOM_VEHICLES.filter((c) => !EXCLUDED_VEHICLE_IDS.has(c.id));
 
-      const updated = activeShowroom.map((car) => {
-        const cloudImgs = latestCloudPhotosMap[car.id] || [];
-        const localImgs = localMap[car.id] || [];
-        const currentImgs = car.images || [];
+    const updated = activeShowroom.map((car) => {
+      const cloudImgs = latestCloudPhotosMap[car.id] || [];
+      const localImgs = localMap[car.id] || [];
+      const currentImgs = car.images || [];
 
-        // Priority 1: Cloud photos (visible to everyone everywhere)
-        // Priority 2: Local uploaded photos (currently on user's laptop)
-        // Priority 3: Default static images
-        let effectiveImages: string[] = currentImgs;
+      let effectiveImages: string[] = currentImgs;
+      if (cloudImgs.length > 0) {
+        effectiveImages = cloudImgs;
+      } else if (localImgs.length > 0) {
+        effectiveImages = localImgs;
+      }
 
-        if (cloudImgs.length > 0) {
-          effectiveImages = cloudImgs;
-        } else if (localImgs.length > 0) {
-          effectiveImages = localImgs;
-          // Automatically sync local photos up to Cloud Firestore in background so they become web-visible!
-          if (localImgs.length > 0 && cloudImgs.length === 0) {
-            // Auto sync to cloud in background
-            const now = new Date().toISOString();
-            const writes = localImgs.map((dataUrl, idx) => {
-              const docId = `${car.id}_${idx}`;
-              return setDoc(doc(db, 'vehicle_photos', docId), {
-                id: docId,
-                carId: car.id,
-                slotIndex: idx,
-                dataUrl,
-                updatedAt: now,
-              }).catch(() => {});
-            });
-            Promise.all(writes).catch(() => {});
-          }
-        }
+      return {
+        ...car,
+        images: effectiveImages,
+      };
+    });
 
-        return {
-          ...car,
-          images: effectiveImages,
-        };
-      });
+    activeSubscribers.forEach((cb) => cb(updated));
+  } catch {
+    activeSubscribers.forEach((cb) => cb(latestVehiclesList));
+  }
+}
 
-      onUpdate(updated);
-    } catch {
-      onUpdate(latestVehiclesList);
-    }
+export function subscribeToVehicles(onUpdate: (vehicles: Car[]) => void) {
+  let isSubscribed = true;
+  activeSubscribers.add(onUpdate);
+
+  const dispatchMerged = async () => {
+    if (!isSubscribed) return;
+    await refreshLocalVehicles();
   };
+
+  // Dispatch immediately from local dataset so UI never waits on Firestore
+  dispatchMerged();
 
   // Subscribe to real-time Cloud Photos (Firestore vehicle_photos)
   const unsubscribePhotos = subscribeToCloudPhotos((photosMap) => {
@@ -213,6 +202,7 @@ export function subscribeToVehicles(onUpdate: (vehicles: Car[]) => void) {
 
   return () => {
     isSubscribed = false;
+    activeSubscribers.delete(onUpdate);
     unsubscribePhotos();
     unsubscribeVehicles();
   };

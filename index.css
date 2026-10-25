@@ -35,8 +35,45 @@
   }
 }
 
-.font-script {
+.font-script,
+.font-signature {
   font-family: "Alex Brush", cursive !important;
+}
+
+.glass {
+  background: rgba(9, 9, 9, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.btn-dark-blue {
+  background: linear-gradient(135deg, #172554 0%, #1e40af 50%, #1d4ed8 100%);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.btn-dark-blue:hover {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInModal 0.2s ease-out forwards;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @keyframes marquee {

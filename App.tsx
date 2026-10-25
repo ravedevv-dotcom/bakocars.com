@@ -7,7 +7,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Car, FilterState, Inquiry, getImageUrl, handleImageFallback } from './types';
 import { SHOWROOM_VEHICLES } from './data';
-import { subscribeToVehicles } from './inventoryStore';
+import { subscribeToVehicles, refreshLocalVehicles } from './inventoryStore';
 
 // Component Imports
 import Header from './Header';
@@ -50,6 +50,14 @@ export default function App() {
       if (search.includes('admin=photos') || search.includes('upload=photos')) {
         setShowPhotoManager(true);
       }
+      const params = new URLSearchParams(search);
+      const sharedCarId = params.get('carId');
+      if (sharedCarId) {
+        const matched = SHOWROOM_VEHICLES.find((v) => v.id === sharedCarId);
+        if (matched) {
+          setSelectedCar(matched);
+        }
+      }
     }
   }, []);
 
@@ -78,8 +86,8 @@ export default function App() {
     bodyType: 'All',
     transmission: 'All',
     minPrice: minPrice,
-    maxPrice: maxPrice,
-    minYear: 2010,
+    maxPrice: Math.max(maxPrice, 500000000),
+    minYear: 2000,
     sortBy: 'price-desc',
   });
 
@@ -397,7 +405,7 @@ export default function App() {
                           <tr className="border-b border-white/10">
                             <th className="py-4 font-mono text-[9px] text-white/45 uppercase tracking-[0.2em] w-[180px]">Specifications</th>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               if (!car) return null;
                               return (
                                 <th key={carId} className="py-4 px-4 w-[280px]">
@@ -427,7 +435,7 @@ export default function App() {
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Investment Value</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return (
                                 <td key={carId} className={`py-3 px-4 font-bold ${car && (!car.price || car.price <= 0) ? 'text-blue-500' : 'text-white'}`}>
                                   {car ? formatCurrency(car.price) : '-'}
@@ -438,14 +446,14 @@ export default function App() {
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Engine Power</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return <td key={carId} className="py-3 px-4">{car ? `${car.power} HP` : '-'}</td>;
                             })}
                           </tr>
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">0-60 MPH Speed</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return <td key={carId} className="py-3 px-4">{car ? car.acceleration : '-'}</td>;
                             })}
                           </tr>
@@ -462,42 +470,42 @@ export default function App() {
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Power Plant</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return <td key={carId} className="py-3 px-4 text-xs font-sans text-white/80">{car ? car.engine : '-'}</td>;
                             })}
                           </tr>
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Top Velocity</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return <td key={carId} className="py-3 px-4">{car ? car.topSpeed : '-'}</td>;
                             })}
                           </tr>
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Drivetrain</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return <td key={carId} className="py-3 px-4 uppercase">{car ? car.transmission : '-'}</td>;
                             })}
                           </tr>
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Fuel System</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return <td key={carId} className="py-3 px-4 uppercase">{car ? car.fuelType : '-'}</td>;
                             })}
                           </tr>
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Showroom Location</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return <td key={carId} className="py-3 px-4 uppercase text-xs font-sans text-white/80">{car ? car.location : 'Abuja'}</td>;
                             })}
                           </tr>
                           <tr>
                             <td className="py-3 text-white/45 font-mono text-[9px] uppercase tracking-wider">Performance Merits</td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               return (
                                 <td key={carId} className="py-3 px-4 text-xs font-sans text-white/70">
                                   {car ? (
@@ -514,7 +522,7 @@ export default function App() {
                           <tr className="border-t border-white/10">
                             <td className="py-4"></td>
                             {comparedCarIds.map(carId => {
-                              const car = SHOWROOM_VEHICLES.find(c => c.id === carId);
+                              const car = vehicles.find(c => c.id === carId);
                               if (!car) return null;
                               return (
                                 <td key={carId} className="py-4 px-4">
@@ -591,8 +599,8 @@ export default function App() {
                           bodyType: 'All',
                           transmission: 'All',
                           minPrice: minPrice,
-                          maxPrice: maxPrice,
-                          minYear: 2010,
+                          maxPrice: Math.max(maxPrice, 500000000),
+                          minYear: 2000,
                           sortBy: 'price-desc',
                         });
                       }}
@@ -616,6 +624,7 @@ export default function App() {
               className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
             >
               <FavoritesSection
+                vehicles={vehicles}
                 favoriteCarIds={favoriteCarIds}
                 onToggleFavorite={handleToggleFavorite}
                 onViewDetails={(c) => handleViewCarDetails(c, 'Inquiry')}
@@ -724,7 +733,7 @@ export default function App() {
             setSelectedUploadCarId(undefined);
           }}
           onPhotosUpdated={() => {
-            subscribeToVehicles((updated) => setVehicles(updated));
+            refreshLocalVehicles();
           }}
         />
       )}
