@@ -66,7 +66,11 @@ const PopularListingCard: React.FC<PopularListingCardProps> = ({
       onMouseLeave={handleMouseLeave}
     >
       <div
-        onClick={() => onViewDetails(car)}
+        onClick={() => {
+          const selection = window.getSelection()?.toString().trim();
+          if (selection && selection.length > 0) return;
+          onViewDetails(car);
+        }}
         style={
           tilt
             ? {
@@ -79,7 +83,7 @@ const PopularListingCard: React.FC<PopularListingCardProps> = ({
         }
         className={`${
           !tilt ? 'bako-card-idle-3d' : ''
-        } relative h-full bg-[#090909] rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/75 transition-colors duration-300 flex flex-col justify-between group cursor-pointer shadow-[0_14px_34px_rgba(0,0,0,0.85)] hover:shadow-[0_22px_50px_rgba(30,64,175,0.28)]`}
+        } relative h-full bg-[#090909] rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/75 transition-colors duration-300 flex flex-col justify-between group cursor-pointer select-text shadow-[0_14px_34px_rgba(0,0,0,0.85)] hover:shadow-[0_22px_50px_rgba(30,64,175,0.28)]`}
       >
         {/* Dynamic 3D Specular Glare Overlay */}
         {tilt && (
@@ -232,7 +236,7 @@ export default function NewInventory({
   };
 
   return (
-    <section className="py-20 bg-black text-white border-t border-white/10 select-none" id="new-inventory-section">
+    <section className="py-20 bg-black text-white border-t border-white/10 select-text" id="new-inventory-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading + Horizontal Carousel Navigation Arrows */}
         <div className="flex items-end justify-between mb-10 pb-4 border-b border-white/10 gap-4">

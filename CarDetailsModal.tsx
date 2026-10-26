@@ -238,7 +238,7 @@ export default function CarDetailsModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 select-none animate-fade-in"
+      className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 select-text animate-fade-in"
       onClick={onClose}
     >
       <motion.div

@@ -79,13 +79,17 @@ const CarCard: React.FC<CarCardProps> = ({
 
   return (
     <div
-      onClick={() => onViewDetails(car)}
+      onClick={() => {
+        const selection = window.getSelection()?.toString().trim();
+        if (selection && selection.length > 0) return;
+        onViewDetails(car);
+      }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
         setIsHovered(false);
         setCurrentImgIdx(0);
       }}
-      className="group bg-[#090909] rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/60 transition-colors duration-300 flex flex-col justify-between cursor-pointer select-none shadow-lg hover:shadow-xl"
+      className="group bg-[#090909] rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/60 transition-colors duration-300 flex flex-col justify-between cursor-pointer select-text shadow-lg hover:shadow-xl"
       id={`car-card-${car.id}`}
     >
       <div>
@@ -104,7 +108,7 @@ const CarCard: React.FC<CarCardProps> = ({
               }}
             />
           ) : (
-            <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-neutral-900 via-black to-neutral-950 p-6 text-center space-y-2.5 select-none">
+            <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-neutral-900 via-black to-neutral-950 p-6 text-center space-y-2.5">
               <div className="w-12 h-12 rounded-full border border-white/15 bg-neutral-900 flex items-center justify-center text-blue-500">
                 <Camera className="w-5 h-5" />
               </div>
