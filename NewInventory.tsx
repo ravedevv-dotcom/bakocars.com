@@ -3,9 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Car, getImageUrl, handleImageFallback } from './types';
-import { Bell, MessageCircle, Camera } from 'lucide-react';
+import { SHOWROOM_VEHICLES } from './data';
+import { Bell, MessageCircle, Camera, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface NewInventoryProps {
   vehicles: Car[];
@@ -60,7 +61,7 @@ const PopularListingCard: React.FC<PopularListingCardProps> = ({
 
   return (
     <div
-      className="bako-perspective-wrap"
+      className="bako-perspective-wrap shrink-0 w-[295px] sm:w-[335px] snap-start py-2"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -78,7 +79,7 @@ const PopularListingCard: React.FC<PopularListingCardProps> = ({
         }
         className={`${
           !tilt ? 'bako-card-idle-3d' : ''
-        } relative bg-[#090909] rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/75 transition-colors duration-300 flex flex-col justify-between group cursor-pointer shadow-[0_14px_34px_rgba(0,0,0,0.85)] hover:shadow-[0_22px_50px_rgba(30,64,175,0.28)]`}
+        } relative h-full bg-[#090909] rounded-xl overflow-hidden border border-white/10 hover:border-blue-500/75 transition-colors duration-300 flex flex-col justify-between group cursor-pointer shadow-[0_14px_34px_rgba(0,0,0,0.85)] hover:shadow-[0_22px_50px_rgba(30,64,175,0.28)]`}
       >
         {/* Dynamic 3D Specular Glare Overlay */}
         {tilt && (
@@ -203,34 +204,73 @@ const PopularListingCard: React.FC<PopularListingCardProps> = ({
   );
 };
 
+// Popular Listings - strictly the 5 original showroom vehicles in exact order
+const TARGET_INVENTORY_IDS = [
+  'mercedes-g63-2020',
+  'range-rover-velar-black-2020',
+  'mercedes-gle53-2022',
+  'mercedes-s63-2015',
+  'range-rover-velar-2020',
+];
+
 export default function NewInventory({
   vehicles,
   onViewDetails,
   onOpenPriceAlert,
 }: NewInventoryProps) {
-  const newCars = vehicles.slice(0, 12);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const newCars: Car[] = TARGET_INVENTORY_IDS
+    .map((id) => vehicles.find((car) => car.id === id) || SHOWROOM_VEHICLES.find((car) => car.id === id))
+    .filter((car): car is Car => car !== undefined);
+
+  const handleScroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollOffset = direction === 'left' ? -360 : 360;
+      scrollRef.current.scrollBy({ left: scrollOffset, behavior: 'smooth' });
+    }
+  };
 
   return (
-    <section className="py-20 bg-black text-white border-t border-white/10 select-none">
+    <section className="py-20 bg-black text-white border-t border-white/10 select-none" id="new-inventory-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Heading */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        {/* Section Heading + Horizontal Carousel Navigation Arrows */}
+        <div className="flex items-end justify-between mb-10 pb-4 border-b border-white/10 gap-4">
           <div>
             <span className="font-mono text-xs uppercase tracking-[0.25em] text-blue-500 font-semibold block mb-2">
               Curated Showroom Arrivals
             </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight uppercase text-white">
+            <h2 className="font-display text-2xl sm:text-4xl font-extrabold tracking-tight uppercase text-white">
               Popular Listings
             </h2>
-            <div className="w-16 h-1 bg-blue-700 mt-3 rounded-full" />
+            <div className="w-20 h-1 bg-blue-700 mt-3 rounded-full" />
           </div>
-          <p className="text-white/60 text-sm max-w-md font-sans">
-            Every vehicle in our Abuja showroom is hand-inspected, customs duty-paid, and ready for immediate acquisition.
-          </p>
+
+          {/* Left / Right Horizontal Scroll Controls */}
+          <div className="flex items-center space-x-2 shrink-0">
+            <button
+              onClick={() => handleScroll('left')}
+              className="p-2.5 border border-white/10 hover:border-blue-500 text-white/70 hover:text-white bg-neutral-900 hover:bg-blue-950/50 transition-all rounded-xl cursor-pointer"
+              aria-label="Scroll left"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={() => handleScroll('right')}
+              className="p-2.5 border border-white/10 hover:border-blue-500 text-white/70 hover:text-white bg-neutral-900 hover:bg-blue-950/50 transition-all rounded-xl cursor-pointer"
+              aria-label="Scroll right"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
 
-        {/* 12-Vehicle Responsive Grid with Slowed, Harmonious Per-Card 3D Tilt & Idle Motion */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Horizontal Side-by-Side Placement with New Style & Slowed Per-Card 3D Motion */}
+        <div
+          ref={scrollRef}
+          className="flex flex-nowrap space-x-6 overflow-x-auto pb-6 pt-2 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent snap-x snap-mandatory"
+          style={{ scrollbarWidth: 'thin', scrollbarColor: 'rgba(255,255,255,0.15) transparent' }}
+        >
           {newCars.map((car, idx) => (
             <PopularListingCard
               key={car.id}

@@ -158,14 +158,15 @@ export function subscribeToVehicles(onUpdate: (vehicles: Car[]) => void) {
           if (defaultCar) {
             const defaultImgs = defaultCar.images || [];
             const firestoreImgs = fCar.images || [];
-            const images =
-              firestoreImgs.length >= defaultImgs.length && firestoreImgs.length > 0
-                ? firestoreImgs
-                : defaultImgs;
+            const hasCustomUploads =
+              firestoreImgs.length > 0 &&
+              firestoreImgs.some((img) => img.startsWith('data:'));
+            const images = hasCustomUploads ? firestoreImgs : defaultImgs;
 
             merged.push({
               ...defaultCar,
               ...fCar,
+              exteriorColor: defaultCar.exteriorColor || fCar.exteriorColor,
               images,
             });
           } else {

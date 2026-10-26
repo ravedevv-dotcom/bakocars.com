@@ -98,25 +98,34 @@
 /* Smooth, poised 3D idle motion for Home Page Popular Listings cards */
 @keyframes bakoCardIdle3D {
   0%, 100% {
-    transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0px);
+    transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translate3d(0, 0px, 0);
   }
   25% {
-    transform: perspective(1200px) rotateX(2.4deg) rotateY(-3.2deg) translateY(-4px);
+    transform: perspective(1200px) rotateX(2deg) rotateY(-2.6deg) translate3d(0, -3px, 0);
   }
   50% {
-    transform: perspective(1200px) rotateX(-1.5deg) rotateY(2.2deg) translateY(-2px);
+    transform: perspective(1200px) rotateX(-1.2deg) rotateY(1.8deg) translate3d(0, -1.5px, 0);
   }
   75% {
-    transform: perspective(1200px) rotateX(-2.4deg) rotateY(3.2deg) translateY(-4px);
+    transform: perspective(1200px) rotateX(-2deg) rotateY(2.6deg) translate3d(0, -3px, 0);
   }
 }
 
 .bako-card-idle-3d {
-  animation: bakoCardIdle3D 8.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  animation: bakoCardIdle3D 9s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
   transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   will-change: transform;
 }
 
 .bako-perspective-wrap {
   perspective: 1200px;
 }
+
+.bako-horizontal-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+}
+
