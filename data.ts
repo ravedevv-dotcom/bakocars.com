@@ -33,7 +33,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAM-18-085000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 TOYOTA CAMRY SE main image.jpg",
@@ -74,7 +74,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "RAV4-19-043000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 TOYOTA RAV4 main image.jpg",
@@ -115,7 +115,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE450-20-038000",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MERCEDES BENZ GLE450 main image.jpg",
@@ -156,7 +156,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "HL-21-034000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2021 TOYOTA HIGHLANDER XLE  main image.jpg",
@@ -175,7 +175,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Toyota",
     "model": "Fortuner VXR",
     "year": 2022,
-    "price": 55000000,
+    "price": 49000000,
     "mileage": null,
     "engine": "4.0L V6 24V DOHC Dual VVT-i",
     "transmission": "Automatic",
@@ -197,7 +197,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "FORT-22-047000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2022 TOYOTA FORTUNER VXR main image.jpg",
@@ -238,7 +238,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "TACO-17-104000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 TOYOTA TACOMA main image.jpg",
@@ -279,7 +279,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "HL-19-046000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 TOYOTA HIGHLANDER XLE main image.jpg",
@@ -320,7 +320,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "COR-22-044000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2022 TOYOTA COROLLA main image.jpg",
@@ -361,7 +361,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "COR-20-103000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 TOYOTA COROLLA main image.jpg",
@@ -379,7 +379,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLE 63S AMG",
     "year": 2017,
-    "price": 69999999,
+    "price": 75000000,
     "mileage": null,
     "engine": "5.5L Handcrafted AMG Bi-Turbo V8",
     "transmission": "Automatic",
@@ -401,7 +401,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE63S-17-104000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 MERCEDES BENZ GLE63S main image.jpg",
@@ -446,7 +446,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "G63-20-032000",
-    "location": "Main Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MERCEDES BENZ G63 1 mian image.jpg",
@@ -466,7 +466,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Land Rover",
     "model": "Range Rover Velar Black Edition",
     "year": 2020,
-    "price": 59500000,
+    "price": 60000000,
     "mileage": null,
     "engine": "2.0L Turbocharged Inline-4 Ingenium",
     "transmission": "Automatic",
@@ -490,7 +490,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "VELAR-BLK-20-041000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 RANGE ROVER VELAR different one black  main image.jpg",
@@ -509,7 +509,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLE 53 AMG 4MATIC+",
     "year": 2022,
-    "price": 125000000,
+    "price": 130000000,
     "mileage": null,
     "engine": "3.0L Inline-6 Turbo with EQ Boost & AMG Electric Auxiliary Compressor",
     "transmission": "Automatic",
@@ -534,7 +534,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE53-22-028000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2022 MERCEDES BENZ GLE53 main image.jpg",
@@ -552,7 +552,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "S 63 AMG 4MATIC Biturbo",
     "year": 2015,
-    "price": 52000000,
+    "price": 45000000,
     "mileage": null,
     "engine": "5.5L Handcrafted AMG V8 Biturbo",
     "transmission": "Automatic",
@@ -577,7 +577,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "S63-15-058000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 MERCEDES BENZ S63 main image.jpg",
@@ -620,7 +620,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "VELAR-20-043000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 RANGE ROVER VELAR 1 main image.jpg",
@@ -663,7 +663,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE350-20-049000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MERCEDES BENZ GLE350 1 main image.jpg",
@@ -682,7 +682,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLC 43 AMG 4MATIC",
     "year": 2020,
-    "price": 68000000,
+    "price": 65000000,
     "mileage": null,
     "engine": "3.0L V6 Biturbo AMG Enhanced",
     "transmission": "Automatic",
@@ -705,7 +705,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLC43-20-041000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 GLC 43 AMG MERCEDES BENZ 1 main image.jpg",
@@ -724,7 +724,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLE 43 AMG Coupe",
     "year": 2020,
-    "price": 72000000,
+    "price": 70000000,
     "mileage": null,
     "engine": "3.0L V6 Biturbo AMG",
     "transmission": "Automatic",
@@ -747,7 +747,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE43-20-044000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MERCEDES BENZ GLE43 1 main image.jpg",
@@ -767,7 +767,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "E 53 AMG 4MATIC+ Sedan",
     "year": 2019,
-    "price": 64000000,
+    "price": 68000000,
     "mileage": null,
     "engine": "3.0L Turbocharged Inline-6 with EQ Boost & Electric Compressor",
     "transmission": "Automatic",
@@ -790,7 +790,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "E53-19-039000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 MERCEDES BENZ E53 main image.jpg",
@@ -810,7 +810,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "E 350 Luxury Sedan",
     "year": 2020,
-    "price": 49500000,
+    "price": 45000000,
     "mileage": null,
     "engine": "2.0L Turbocharged Inline-4",
     "transmission": "Automatic",
@@ -832,7 +832,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "E350-20-046000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MERCEDES BENZ E350 1 main image.jpg",
@@ -875,7 +875,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "E300-18-062000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 MERCEDES BENZ E300 1 mian image.jpg",
@@ -918,7 +918,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "C300-20-048000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MERCEDES BENZ C300 main image.jpg",
@@ -960,7 +960,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "C300-16-078000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 MERCEDES BENZ C300 1 MAIN IMAGE.jpg",
@@ -1000,7 +1000,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "C300-15-082000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 MERCEDES BENZ C300 main image.jpg",
@@ -1018,7 +1018,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "G 63 AMG V8 Biturbo",
     "year": 2015,
-    "price": 95000000,
+    "price": 75000000,
     "mileage": null,
     "engine": "5.5L Handcrafted AMG V8 Biturbo",
     "transmission": "Automatic",
@@ -1041,7 +1041,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "G63-15-063000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 MERCEDES BENZ G63 1 main image.jpg",
@@ -1083,7 +1083,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE350-15-079000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 MERCEDES BENZ GLE350 1 mina img.jpg",
@@ -1126,7 +1126,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CLS550-13-089000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 MERCEDES BENZ CLS550 main image.jpg",
@@ -1167,7 +1167,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "C350-13-095000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 MERCEDES BENZ C350 COUPE 1 main img.jpg",
@@ -1208,7 +1208,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "C250-13-104000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 MERCEDES BENZ C250  COUPE 1 main img.jpg",
@@ -1248,7 +1248,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CLA250-18-058000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 MERCEDES BENZ CLA250 1 main image.jpg",
@@ -1291,7 +1291,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLA250-18-054000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 MERCEDES BENZ GLA250 1 main image.jpg",
@@ -1333,7 +1333,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLA250-17-067000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 MERCEDES BENZ GLA250 1 mian img.jpg",
@@ -1374,7 +1374,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLC300-16-071000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 MERCEDES BENZ GLC300 1 main img.jpg",
@@ -1415,7 +1415,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE400-16-068000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 MERCEDES BENZ GLE400 main image.jpg",
@@ -1456,7 +1456,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLK350-14-098000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2014 MERCEDES BENZ GLK350 1 main img.jpg",
@@ -1497,7 +1497,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "X6-15-074000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 BMW X6 MAIN IMAGE.jpg",
@@ -1535,7 +1535,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "535I-13-137000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 BMW 535i main image.jpg",
@@ -1577,7 +1577,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "335I-13-112000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 BMW 335I 1 main image.jpg",
@@ -1618,7 +1618,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GIULIA-18-052000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 ALFA ROMEO  1 main image.jpg",
@@ -1657,7 +1657,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "MINI-20-038000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MINI COPPER S main image.jpg",
@@ -1697,7 +1697,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "RX350-22-036000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2022 LEXUS RX350 FSPORT 1 main image.jpg",
@@ -1737,7 +1737,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ES350-19-051000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 LEXUS ES350 1 main img.jpg",
@@ -1756,7 +1756,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Lexus",
     "model": "GX 460 Luxury 4WD V8",
     "year": 2018,
-    "price": 52000000,
+    "price": 35000000,
     "mileage": null,
     "engine": "4.6L V8 32-Valve DOHC Dual VVT-i",
     "transmission": "Automatic",
@@ -1779,7 +1779,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GX460-18-059000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 LEXUS GX460  1 main image.jpg",
@@ -1821,7 +1821,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GX460-16-071000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 LEXUS GX460  main image.jpg",
@@ -1861,7 +1861,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "UX250H-18-049000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 LEXUS UX250h FSPORT main image.jpg",
@@ -1902,7 +1902,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "IS250-15-079000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 LEXUS IS250 main image.jpg",
@@ -1944,7 +1944,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "SONATA-15-086000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 HYUNDAI SONATA different one red main image.jpg",
@@ -1986,7 +1986,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "SONATA-19-057000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 HYUNDAI SONATA 1 main image.jpg",
@@ -2028,7 +2028,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "SONATA-19-051000-W",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 HYUNDAI SONATA [THIS IS NOT THE SAME CAR ITS ANOTHER ONE STILLL ADD IT TO THE LISTINGS] 1 main image.jpg",
@@ -2071,7 +2071,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-20-044000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 HONDA ACCORD SPORT 1 mian image.jpg",
@@ -2113,7 +2113,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-19-042000-W",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 HONDA ACCORD 2.0T  this is another one from the others this si the color whiteMAIN IMAGE[].jpg",
@@ -2154,7 +2154,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-18-049000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 HONDA ACCORD 2.0T TOURING 1 main img.jpg",
@@ -2196,7 +2196,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-17-063000-V6",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 HONDA ACCORD V6 main image.jpg",
@@ -2237,7 +2237,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-17-069000-EXL",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 HONDA ACCORD EXL 1 miain img.jpg",
@@ -2279,7 +2279,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-16-076000-SPT",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 HONDA ACCORD SPORT different one  main image.jpg",
@@ -2321,7 +2321,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-13-099000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 HONDA ACCORD EXL 1 main img.jpg",
@@ -2363,7 +2363,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CIVIC-24-012000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2024 HONDA CIVIC main image.jpg",
@@ -2406,7 +2406,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "SONGPRO-24-006500",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2024 BYD SONG PRO 1 mian image.jpg",
@@ -2425,7 +2425,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Toyota",
     "model": "Camry 2.0S Dynamic Edition",
     "year": 2025,
-    "price": 52000000,
+    "price": 55000000,
     "mileage": null,
     "engine": "2.0L Dynamic Force 4-Cylinder D-4S",
     "transmission": "Automatic",
@@ -2448,7 +2448,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY25-2.0S-003200",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2025 TOYOTA CAMRY 2.0S main image.jpg",
@@ -2490,7 +2490,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY25-HYB-002800",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2025 TOYOTA CAMRY HYBRID 1.jpg",
@@ -2531,7 +2531,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY25-HYB-004100",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2025 TOYOTA CAMRY HYBRID main image [different car from the other 1].jpg"
@@ -2565,7 +2565,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "AVALON-20-044000",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 TOYOTA AVALANCHE XSE main image.jpg",
@@ -2607,7 +2607,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-19-056000-XSE",
-    "location": "Bako Cars Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 TOYOTA CAMRY XSE main image.jpg",
@@ -2649,7 +2649,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-19-058000-SIL",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "GOOD DEAL ‼️2019 TOYOTA CAMRY XSE main image[different one ].jpg",
@@ -2691,7 +2691,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-18-064000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 TOYOTA CAMRY LE 1 main image.jpg",
@@ -2733,7 +2733,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-17-078000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 TOYOTA CAMRY SE 1 main img.jpg",
@@ -2772,7 +2772,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "COROLLA-17-072000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 TOYOTA COROLLA SE 1 main img.jpg",
@@ -2814,7 +2814,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "SIENNA-17-068000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 TOYOTA SIENNA XLE LIMITED 1 mian img.jpg",
@@ -2856,7 +2856,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-16-081000-XLE",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 TOYOTA CAMRY XLE main img.jpg",
@@ -2898,7 +2898,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-16-083000-SE",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 TOYOTA CAMRY SE 1 mian img.jpg",
@@ -2940,7 +2940,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-13-108000-SE",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 TOYOTA CAMRY SE main image.jpg",
@@ -2981,7 +2981,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-13-115000-LE",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 TOYOTA CAMRY LE  main image.jpg",
@@ -2998,7 +2998,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Toyota",
     "model": "Hilux Double Cabin 4x4",
     "year": 2011,
-    "price": 18500000,
+    "price": 10500000,
     "mileage": null,
     "engine": "2.7L VVT-i 4-Cylinder Rugged Utility Engine",
     "transmission": "Automatic",
@@ -3021,7 +3021,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "HILUX-11-128000",
-    "location": "Main Showroom, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2011 TOYOTA HILUX main image.jpg",
@@ -3062,7 +3062,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "C450-16-115000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 MERCEDES BENZ C450 main image.jpg",
@@ -3104,7 +3104,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ES350-20-064000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 LEXUS ES350 main image.jpg",
@@ -3147,7 +3147,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ELANTRA-19-144000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2019 HYUNDAI ELANTRA main image.jpg",
@@ -3189,7 +3189,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "MINI-06-115000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2006 MINI COPPER main image.jpg",
@@ -3232,7 +3232,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "MINI-16-065000-S",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 MINI COPPER S main image.jpg",
@@ -3275,7 +3275,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-16-138000-EXL",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 HONDA ACCORD EXL main image.jpg",
@@ -3317,7 +3317,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "RX350L-18-095000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 LEXUS Rx350L main image.jpg",
@@ -3359,7 +3359,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-13-085000-SE",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 TOYOTA CAMRY SE main image.jpg",
@@ -3401,7 +3401,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLB250-20-070000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 MERCEDES BENZ GLB250 main image.jpg",
@@ -3442,7 +3442,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-20-059000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2020 HONDA ACCORD BEIGE INTERIOR main image.jpg",
@@ -3485,7 +3485,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "E350-25-004000-W214",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2025 MERCEDES BENZ E350 main image.jpg",
@@ -3505,7 +3505,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "G 63 AMG Biturbo",
     "year": 2022,
-    "price": 290000000,
+    "price": 235000000,
     "mileage": null,
     "engine": "4.0L Handcrafted AMG V8 Biturbo (577 hp)",
     "transmission": "Automatic",
@@ -3530,7 +3530,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "G63-22-008000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2022 MERCEDES BENZ G63 main image.jpg",
@@ -3572,7 +3572,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "COROLLA-10-098000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2010 TOYOTA COROLLA main image.jpg",
@@ -3613,7 +3613,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "UNIT-24-010000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2024 CHANGAN UNI-T main image.jpg",
@@ -3657,7 +3657,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLA45-15-172000",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 MERCEDES BENZ GLA45 main image.jpg",
@@ -3701,7 +3701,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CIVIC-16-106000-EXL",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 HONDA CIVIC EXL main image.jpg",
@@ -3743,7 +3743,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "RX350-12-187000-CRM",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2012 LEXUS RX350 main image.jpg",
@@ -3785,7 +3785,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CAMRY-18-150000-XSE",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 TOYOTA CAMRY XSE main image.jpg",
@@ -3827,7 +3827,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "CRV-15-172000-EXL",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 HONDA CR-V main image.jpg",
@@ -3868,7 +3868,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ML350-14-122000-BGE",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2014 MERCEDES BENZ ML350 main image.jpg",
@@ -3909,7 +3909,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "RX350-15-110000-CRM",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2015 LEXUS RX350 main image.jpg",
@@ -3925,9 +3925,9 @@ export const SHOWROOM_VEHICLES: Car[] = [
   {
     "id": "lexus-lx570-2016-black",
     "make": "Lexus",
-    "model": "LX 570 Flagship V8",
+    "model": "LX 570 Flagship V8 (Used)",
     "year": 2016,
-    "price": 74999999,
+    "price": 75000000,
     "mileage": null,
     "engine": "5.7L V8 DOHC 32-Valve Dual VVT-i (383 hp)",
     "transmission": "Automatic",
@@ -3941,17 +3941,17 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "status": "In Stock",
     "featured": true,
     "isNewArrival": true,
-    "description": "2016 Lexus LX 570 Flagship V8. Full paid customs duty. Available now in Behind Tsukunda House, Abuja.",
+    "description": "2016 Lexus LX 570 Flagship V8 (Used). Full paid customs duty. Available now at 2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria.",
     "highlights": [
+      "Used — Verified Clean Condition",
       "Flagship 5.7L 383hp V8 Engine",
       "Crawl Control & Active Height Control",
       "Mark Levinson Reference Audio",
-      "Full Paid Customs Duty",
-      "Behind Tsukunda House, Abuja"
+      "Full Paid Customs Duty"
     ],
     "vin": "",
     "chassisNumber": "LX570-16-105000-BLK",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 LEXUS LX570 main image.jpg",
@@ -3962,7 +3962,8 @@ export const SHOWROOM_VEHICLES: Car[] = [
       "2016 LEXUS LX570 5.jpg",
       "2016 LEXUS LX570 6.jpg",
       "2016 LEXUS LX570 7.jpg"
-    ]
+    ],
+    "condition": "Foreign Used"
   },
   {
     "id": "mercedes-gle350-2016-cream",
@@ -3992,7 +3993,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "GLE350-16-076000-CRM",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2016 MERCEDES BENZ GLE350 main image.jpg",
@@ -4034,7 +4035,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-18-042000-SPT",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2018 HONDA ACCORD SPORT main image.jpg",
@@ -4076,7 +4077,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ELANTRA-17-134000-GT",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2017 HYUNDAI ELANTRA GT main image.jpg",
@@ -4116,7 +4117,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "X5-25-045000-M",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2025 BMW X5 main image.jpg",
@@ -4154,7 +4155,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "QINL-25-DMI-15KWH",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 0,
     "images": [
       "2025 BYD QIN L DM-i PLUGIN HYBRID main image.jpg",
@@ -4194,7 +4195,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "535I-13-137000-BROWN",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2013 BMW 535i main image.jpg",
@@ -4236,7 +4237,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "WRANGLER-22-030000-4X4",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "2022 JEEP WRANGLER main image 1.jpg",
@@ -4276,7 +4277,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     ],
     "vin": "",
     "chassisNumber": "ACCORD-17-070000-V6",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1,
     "images": [
       "GOOD DEAL‼️2017 HONDA ACCORD V6 main image.jpg",
@@ -4331,7 +4332,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20101",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4376,7 +4377,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20102",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4421,7 +4422,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20103",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4466,7 +4467,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20104",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4511,7 +4512,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20105",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4556,7 +4557,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20106",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4601,7 +4602,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20107",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4646,7 +4647,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20108",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4691,7 +4692,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20109",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4737,7 +4738,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20110",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4782,7 +4783,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20112",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4790,7 +4791,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "BMW",
     "model": "X4 //M40i",
     "year": 2020,
-    "price": 130000000,
+    "price": 55000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -4827,7 +4828,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20113",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4872,7 +4873,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20114",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4916,7 +4917,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20116",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4961,7 +4962,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20117",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -4969,7 +4970,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Lexus",
     "model": "RX350 F-SPORT",
     "year": 2024,
-    "price": 130000000,
+    "price": 95000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -5005,7 +5006,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20118",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5049,7 +5050,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20119",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5095,7 +5096,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20120",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5103,7 +5104,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Toyota",
     "model": "VENZA LIMITED",
     "year": 2023,
-    "price": 75000000,
+    "price": 85000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -5141,7 +5142,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20121",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5186,7 +5187,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20122",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5231,7 +5232,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20123",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5239,7 +5240,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Jeep",
     "model": "WRANGLER",
     "year": 2018,
-    "price": 55000000,
+    "price": 45000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -5276,7 +5277,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20124",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5321,7 +5322,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20125",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5366,7 +5367,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20126",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5411,7 +5412,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20127",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5458,7 +5459,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20128",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5503,7 +5504,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20129",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5548,7 +5549,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20130",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5593,7 +5594,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20131",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5638,7 +5639,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20132",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5682,7 +5683,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20133",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5725,7 +5726,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20134",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5733,7 +5734,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "C43",
     "year": 2023,
-    "price": 130000000,
+    "price": 110000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -5770,7 +5771,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20135",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5815,7 +5816,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20136",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5860,7 +5861,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20137",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5905,7 +5906,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20138",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5950,7 +5951,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20139",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -5994,7 +5995,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20140",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6039,7 +6040,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20141",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6047,7 +6048,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Toyota",
     "model": "CAMRY SE",
     "year": 2025,
-    "price": 85000000,
+    "price": 65000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -6083,7 +6084,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20142",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6127,7 +6128,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20143",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6171,7 +6172,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20144",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6179,7 +6180,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "C43",
     "year": 2016,
-    "price": 55000000,
+    "price": 35000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -6216,7 +6217,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20145",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6260,7 +6261,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20146",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6304,7 +6305,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20147",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6348,7 +6349,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20148",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6393,7 +6394,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20149",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6437,7 +6438,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20150",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6482,7 +6483,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20151",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6490,7 +6491,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Toyota",
     "model": "HIGHLANDER LE",
     "year": 2020,
-    "price": 55000000,
+    "price": 40000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -6526,7 +6527,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20152",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6570,7 +6571,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20153",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6615,7 +6616,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20154",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6661,7 +6662,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20155",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6705,7 +6706,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20156",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6713,7 +6714,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Tesla",
     "model": "MODEL Y",
     "year": 2023,
-    "price": 90000000,
+    "price": 70000000,
     "mileage": null,
     "engine": "Dual Electric Motor (Permanent Magnet)",
     "transmission": "Automatic",
@@ -6748,7 +6749,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20157",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6793,7 +6794,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20158",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6837,7 +6838,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20159",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6882,7 +6883,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20160",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6926,7 +6927,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20161",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -6971,7 +6972,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20162",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7015,7 +7016,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20163",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7059,7 +7060,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20164",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7103,7 +7104,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20165",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7147,7 +7148,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20166",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7155,7 +7156,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Tesla",
     "model": "MODEL Y",
     "year": 2023,
-    "price": 85000000,
+    "price": 70000000,
     "mileage": null,
     "engine": "Dual Electric Motor (Permanent Magnet)",
     "transmission": "Automatic",
@@ -7191,7 +7192,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20167",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7235,7 +7236,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20168",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7243,7 +7244,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "C43",
     "year": 2018,
-    "price": 55000000,
+    "price": 38000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -7279,7 +7280,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20169",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7323,7 +7324,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20170",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7365,7 +7366,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20171",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7409,7 +7410,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20172",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7417,7 +7418,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Tesla",
     "model": "Model 3",
     "year": 2022,
-    "price": 55000000,
+    "price": 45000000,
     "mileage": null,
     "engine": "Dual Electric Motor (Permanent Magnet)",
     "transmission": "Automatic",
@@ -7451,7 +7452,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20173",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7495,7 +7496,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20174",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7503,7 +7504,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Jetour",
     "model": "T2",
     "year": 2025,
-    "price": 59500000,
+    "price": 55000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -7539,7 +7540,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20175",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7547,7 +7548,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Lexus",
     "model": "RX350",
     "year": 2022,
-    "price": 65000000,
+    "price": 55000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -7583,7 +7584,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20176",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7627,7 +7628,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20177",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7671,7 +7672,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20178",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7713,17 +7714,17 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20179",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
     "id": "toyota-hilux-2024-80",
     "make": "Toyota",
-    "model": "HILUX",
+    "model": "HILUX (Diesel)",
     "year": 2024,
-    "price": 79500000,
+    "price": 75000000,
     "mileage": null,
-    "engine": "2.0L Turbocharged 4-Cylinder",
+    "engine": "2.8L Turbo Diesel 4-Cylinder",
     "transmission": "Automatic",
     "power": 255,
     "acceleration": "6.8s",
@@ -7731,7 +7732,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "bodyType": "Truck",
     "exteriorColor": "",
     "interiorColor": "",
-    "fuelType": "Petrol",
+    "fuelType": "Diesel",
     "status": "In Stock",
     "featured": false,
     "isNewArrival": true,
@@ -7748,17 +7749,17 @@ export const SHOWROOM_VEHICLES: Car[] = [
       "2024-toyota-hilux[9].jpg",
       "2024-toyota-hilux[10].jpg"
     ],
-    "description": "2024 Toyota HILUX. Full paid customs duty. Available now in Garki II, Abuja.",
+    "description": "2024 Toyota HILUX Diesel. Full paid customs duty. Available now at 2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria.",
     "highlights": [
+      "2.8L Turbo Diesel Engine",
       "Full Paid Customs Duty",
-      "Available Now in Garki II, Abuja",
-      "Verified Showroom Stock",
-      "Abuja Inspection Ready"
+      "Available Now at 2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
+      "Verified Showroom Stock"
     ],
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20180",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7800,7 +7801,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20181",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7808,7 +7809,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLE53",
     "year": 2021,
-    "price": 135000000,
+    "price": 130000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -7844,7 +7845,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20182",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7887,7 +7888,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20183",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7930,7 +7931,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20184",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7973,7 +7974,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20185",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -7981,7 +7982,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Tesla",
     "model": "MODEL 3",
     "year": 2020,
-    "price": 75000000,
+    "price": 65000000,
     "mileage": null,
     "engine": "Dual Electric Motor (Permanent Magnet)",
     "transmission": "Automatic",
@@ -8016,7 +8017,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20186",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8059,7 +8060,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20187",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8102,7 +8103,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20188",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8146,7 +8147,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20189",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8154,7 +8155,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "C43",
     "year": 2020,
-    "price": 65000000,
+    "price": 55000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -8189,7 +8190,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20190",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8232,7 +8233,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20191",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8278,7 +8279,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20192",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8322,7 +8323,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20193",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8365,7 +8366,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20194",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8409,7 +8410,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20195",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8417,7 +8418,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLC63S",
     "year": 2018,
-    "price": 98000000,
+    "price": 85000000,
     "mileage": null,
     "engine": "4.0L Twin-Turbocharged V8",
     "transmission": "Automatic",
@@ -8454,7 +8455,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20196",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8498,7 +8499,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20197",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8506,7 +8507,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLE63 S",
     "year": 2018,
-    "price": 95000000,
+    "price": 85000000,
     "mileage": null,
     "engine": "4.0L Twin-Turbocharged V8",
     "transmission": "Automatic",
@@ -8542,7 +8543,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20198",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8584,7 +8585,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20199",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8592,7 +8593,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Changan",
     "model": "UNI-K",
     "year": 2025,
-    "price": 66500000,
+    "price": 65000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -8627,7 +8628,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20200",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8670,7 +8671,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20201",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8678,7 +8679,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Hyundai",
     "model": "KONA",
     "year": 2024,
-    "price": 48000000,
+    "price": 40000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -8714,7 +8715,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20202",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8758,7 +8759,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20203",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8766,7 +8767,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLC63S",
     "year": 2018,
-    "price": 80000000,
+    "price": 75000000,
     "mileage": null,
     "engine": "4.0L Twin-Turbocharged V8",
     "transmission": "Automatic",
@@ -8800,7 +8801,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20204",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8843,7 +8844,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20205",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8889,7 +8890,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20206",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8931,7 +8932,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20207",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8974,7 +8975,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20208",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -8982,7 +8983,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLE43",
     "year": 2019,
-    "price": 82000000,
+    "price": 68000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -9014,7 +9015,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20209",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9058,7 +9059,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20210",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9102,7 +9103,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20211",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9146,7 +9147,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20212",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9154,7 +9155,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Lexus",
     "model": "TX350",
     "year": 2025,
-    "price": 150000000,
+    "price": 130000000,
     "mileage": null,
     "engine": "3.0L Turbocharged V6",
     "transmission": "Automatic",
@@ -9191,7 +9192,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20213",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9199,7 +9200,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "BYD",
     "model": "Standard Edition",
     "year": 2025,
-    "price": 49500000,
+    "price": 40000000,
     "mileage": null,
     "engine": "Dual Electric Motor (Permanent Magnet)",
     "transmission": "Automatic",
@@ -9235,7 +9236,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20214",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9243,7 +9244,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Toyota",
     "model": "BZ3",
     "year": 2025,
-    "price": 48000000,
+    "price": 45000000,
     "mileage": null,
     "engine": "Dual Electric Motor (Permanent Magnet)",
     "transmission": "Automatic",
@@ -9279,7 +9280,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20215",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9323,7 +9324,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20216",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9368,7 +9369,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20217",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9415,7 +9416,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20218",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9458,7 +9459,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20219",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9501,7 +9502,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20220",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9543,7 +9544,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20222",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9589,7 +9590,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20223",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9634,7 +9635,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20224",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9642,7 +9643,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "BYD",
     "model": "PLUS FULLY ELECTRIC",
     "year": 2025,
-    "price": 65000000,
+    "price": 55000000,
     "mileage": null,
     "engine": "Dual Electric Motor (Permanent Magnet)",
     "transmission": "Automatic",
@@ -9679,7 +9680,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20225",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9722,7 +9723,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20226",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9768,7 +9769,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20227",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9813,7 +9814,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20228",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9860,7 +9861,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20229",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9903,7 +9904,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20230",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9911,7 +9912,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLB250",
     "year": 2021,
-    "price": 50500000,
+    "price": 45000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -9949,7 +9950,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20231",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -9994,7 +9995,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20232",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10002,7 +10003,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "C63s",
     "year": 2016,
-    "price": 52000000,
+    "price": 55000000,
     "mileage": null,
     "engine": "4.0L Twin-Turbocharged V8",
     "transmission": "Automatic",
@@ -10039,7 +10040,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20234",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10083,7 +10084,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20235",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10127,7 +10128,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20236",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10173,7 +10174,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20237",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10217,7 +10218,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20238",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10263,7 +10264,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20239",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10307,7 +10308,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20240",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10349,7 +10350,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20241",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10393,7 +10394,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20242",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10437,7 +10438,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20243",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10481,7 +10482,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20244",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10528,7 +10529,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20245",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10574,7 +10575,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20246",
-    "location": "Behind Church Gate, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10618,7 +10619,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20247",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10663,7 +10664,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20248",
-    "location": "Garki II, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10705,7 +10706,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20249",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10748,7 +10749,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20250",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10791,7 +10792,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20251",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10835,7 +10836,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20253",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10878,7 +10879,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20254",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10919,7 +10920,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20257",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -10962,7 +10963,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20258",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11005,7 +11006,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20259",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11048,7 +11049,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20260",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11091,7 +11092,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20261",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11133,7 +11134,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20262",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11176,7 +11177,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20263",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11184,7 +11185,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Lexus",
     "model": "LX600 FSPORT",
     "year": 2025,
-    "price": 239000000,
+    "price": 180000000,
     "mileage": null,
     "engine": "2.0L Turbocharged 4-Cylinder",
     "transmission": "Automatic",
@@ -11219,7 +11220,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20264",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11262,7 +11263,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20265",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11306,7 +11307,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20266",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11349,7 +11350,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20267",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11391,7 +11392,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20268",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11434,7 +11435,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20269",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11477,7 +11478,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20270",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11519,7 +11520,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20271",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11563,7 +11564,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20272",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 0
   },
   {
@@ -11607,7 +11608,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20273",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11615,7 +11616,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLC300",
     "year": 2020,
-    "price": 54999999,
+    "price": 60000000,
     "mileage": 58000,
     "engine": "2.0L Inline-4 Turbocharged",
     "transmission": "Automatic",
@@ -11649,7 +11650,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20274",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11693,7 +11694,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20275",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11736,7 +11737,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20276",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11779,7 +11780,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20277",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11822,7 +11823,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20278",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11865,7 +11866,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20279",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11907,7 +11908,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20280",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11949,7 +11950,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20281",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -11992,7 +11993,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20282",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12035,7 +12036,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20283",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12078,7 +12079,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20285",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12121,7 +12122,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20286",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12129,7 +12130,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Mercedes-Benz",
     "model": "GLC300",
     "year": 2023,
-    "price": 80000000,
+    "price": 85000000,
     "mileage": 58000,
     "engine": "2.0L Turbocharged Inline-4 Mild Hybrid",
     "transmission": "Automatic",
@@ -12165,7 +12166,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20287",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12208,7 +12209,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20288",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12249,7 +12250,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20289",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12292,7 +12293,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20290",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12334,7 +12335,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20291",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 0
   },
   {
@@ -12376,7 +12377,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20292",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12418,7 +12419,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20293",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12426,7 +12427,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "make": "Changan",
     "model": "CS75 PRO",
     "year": 2026,
-    "price": 47500000,
+    "price": 45000000,
     "mileage": 500,
     "engine": "1.5L Blue Core Turbocharged Direct Injection",
     "transmission": "Automatic",
@@ -12460,7 +12461,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20294",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 0
   },
   {
@@ -12503,7 +12504,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20295",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12545,7 +12546,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20296",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12588,7 +12589,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20297",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   },
   {
@@ -12630,7 +12631,7 @@ export const SHOWROOM_VEHICLES: Car[] = [
     "vin": "",
     "chassisNumber": "",
     "stockNumber": "20298",
-    "location": "Behind Tsukunda House, Abuja",
+    "location": "2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria",
     "previousOwners": 1
   }
 ];

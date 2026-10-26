@@ -164,8 +164,8 @@ export function subscribeToVehicles(onUpdate: (vehicles: Car[]) => void) {
             const images = hasCustomUploads ? firestoreImgs : defaultImgs;
 
             merged.push({
-              ...defaultCar,
               ...fCar,
+              ...defaultCar,
               exteriorColor: defaultCar.exteriorColor || fCar.exteriorColor,
               images,
             });

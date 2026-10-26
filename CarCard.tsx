@@ -209,8 +209,8 @@ const CarCard: React.FC<CarCardProps> = ({
             <div className="bg-black border border-white/10 rounded-lg px-2.5 py-1.5 truncate">
               {car.engine || 'V8 Biturbo'}
             </div>
-            <div className="bg-black border border-white/10 rounded-lg px-2.5 py-1.5 truncate text-right">
-              {car.location || 'Abuja'}
+            <div className="bg-black border border-white/10 rounded-lg px-2.5 py-1.5 truncate text-right" title={car.location || '2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria'}>
+              {car.location || '2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria'}
             </div>
           </div>
         </div>

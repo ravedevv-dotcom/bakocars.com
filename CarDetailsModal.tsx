@@ -615,14 +615,24 @@ export default function CarDetailsModal({
                     <span className="font-bold text-white uppercase">{car.drivetrain || 'AWD'}</span>
                   </div>
                   <div className="flex justify-between py-1.5 border-b border-neutral-800/70">
+                    <span className="text-neutral-400 uppercase tracking-wider">FUEL TYPE</span>
+                    <span className="font-bold text-white uppercase">{car.fuelType || 'Petrol'}</span>
+                  </div>
+                  {car.condition && (
+                    <div className="flex justify-between py-1.5 border-b border-neutral-800/70">
+                      <span className="text-neutral-400 uppercase tracking-wider">CONDITION</span>
+                      <span className="font-bold text-amber-400 uppercase">{car.condition}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between py-1.5 border-b border-neutral-800/70">
                     <span className="text-neutral-400 uppercase tracking-wider">PHOTO GALLERY</span>
                     <span className="font-bold text-blue-500 uppercase">
                       {currentImages.length > 0 ? `${currentImages.length} PHOTOS` : 'COMING SOON'}
                     </span>
                   </div>
-                  <div className="flex justify-between py-1.5 border-b border-neutral-800/70">
-                    <span className="text-neutral-400 uppercase tracking-wider">SHOWROOM LOCATION</span>
-                    <span className="font-bold text-white uppercase">{car.location || 'Abuja'}</span>
+                  <div className="flex justify-between gap-4 py-1.5 border-b border-neutral-800/70">
+                    <span className="text-neutral-400 uppercase tracking-wider shrink-0">SHOWROOM LOCATION</span>
+                    <span className="font-bold text-white uppercase text-right">{car.location || '2FWF+FH2, behind Tsukunda House, Abuja 900103, Nigeria'}</span>
                   </div>
                   <div className="flex justify-between py-1.5">
                     <span className="text-neutral-400 uppercase tracking-wider">INSPECTION STATUS</span>
