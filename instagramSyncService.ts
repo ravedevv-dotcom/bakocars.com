@@ -14,7 +14,7 @@ export function parseInstagramCaptionToCar(caption: string, mediaUrls: string[],
   // 2. Make Detection
   const makes = [
     { pattern: /mercedes|benz|amg|maybach/i, name: 'Mercedes-Benz' },
-    { pattern: /land rover|range rover|velar|defender|evoque|vogue/i, name: 'Land Rover' },
+    { pattern: /land rover|range rover|velar|defender|evoque|vogue/i, name: 'Range Rover' },
     { pattern: /toyota|lexus|land cruiser|prado|camry|hilux/i, name: 'Toyota' },
     { pattern: /lexus/i, name: 'Lexus' },
     { pattern: /bmw/i, name: 'BMW' },
