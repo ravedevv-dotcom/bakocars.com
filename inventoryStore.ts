@@ -71,6 +71,7 @@ const EXCLUDED_VEHICLE_IDS = new Set([
   'toyota-camry-se-2018-15',
   'mercedes-benz-bulletproof-toyota-landcruiser-vxr-2025-11',
   'toyota-bulletproof-landcruiser-vxr-2025-11',
+  'mercedes-benz-e400-2015-130',
 ]);
 
 let latestVehiclesList: Car[] = SHOWROOM_VEHICLES.filter((c) => !EXCLUDED_VEHICLE_IDS.has(c.id));
