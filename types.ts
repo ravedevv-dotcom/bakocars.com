@@ -31,6 +31,7 @@ export interface Car {
   stockNumber?: string;
   location: string;
   previousOwners: number;
+  condition?: string;
 }
 
 export interface FilterState {
